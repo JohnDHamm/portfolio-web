@@ -13,6 +13,9 @@ import {
   DescriptionText,
   TitleBlock,
 } from './ProjectCard.styles';
+import { CONSTANTS } from '../../styles';
+
+const { PROJECT_CARD_SIZE } = CONSTANTS;
 
 export interface ProjectCardProps {
   /**
@@ -42,15 +45,15 @@ type ContainerSize = {
 
 const initialContainerSize: ContainerSize = {
   y: 0,
-  width: 160,
-  height: 300,
+  width: PROJECT_CARD_SIZE.CLOSED.width,
+  height: PROJECT_CARD_SIZE.CLOSED.height,
   skewX: -15,
 };
 
 const openContainerSize: ContainerSize = {
   y: -10,
-  width: 800,
-  height: 320,
+  width: PROJECT_CARD_SIZE.OPEN.width,
+  height: PROJECT_CARD_SIZE.OPEN.height,
   skewX: -15,
 };
 
