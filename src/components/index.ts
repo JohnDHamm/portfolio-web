@@ -1,3 +1,3 @@
-import TestComponent from "./TestComponent/TestComponent"
+import { ProjectCard } from './ProjectCard/ProjectCard';
 
-export {TestComponent}
+export { ProjectCard };

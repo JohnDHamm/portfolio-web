@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: url(./assets/fonts/PTSansNarrow-Regular.ttf) format('truetype');
+}
