@@ -1,5 +1,4 @@
 import React from 'react';
-import { Transition } from 'framer-motion';
 import {
   Container,
   MotionMainImage,
@@ -13,6 +12,9 @@ import {
   DescriptionText,
   TitleBlock,
 } from './ProjectCard.styles';
+import { CONSTANTS } from '../../styles';
+
+const { PROJECT_CARD_SIZE, PROJECT_CARD_TRANSITION } = CONSTANTS;
 
 export interface ProjectCardProps {
   /**
@@ -28,7 +30,7 @@ export interface ProjectCardProps {
    */
   onMoreClick: (id: string) => void;
   /**
-   * Project data (type of Project)
+   * Project data (type: Project)
    */
   project: Project;
 }
@@ -42,15 +44,15 @@ type ContainerSize = {
 
 const initialContainerSize: ContainerSize = {
   y: 0,
-  width: 160,
-  height: 300,
+  width: PROJECT_CARD_SIZE.CLOSED.width,
+  height: PROJECT_CARD_SIZE.CLOSED.height,
   skewX: -15,
 };
 
 const openContainerSize: ContainerSize = {
   y: -10,
-  width: 800,
-  height: 320,
+  width: PROJECT_CARD_SIZE.OPEN.width,
+  height: PROJECT_CARD_SIZE.OPEN.height,
   skewX: -15,
 };
 
@@ -82,16 +84,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     onMoreClick(id);
   };
 
-  const transition: Transition = {
-    type: 'spring',
-    damping: 50,
-    stiffness: 500,
-  };
-
   const renderDescription = (): JSX.Element[] => {
     const lines: JSX.Element[] = [];
-    description.forEach((line) => {
-      lines.push(<DescriptionText>{line}</DescriptionText>);
+    description.forEach((line, idx) => {
+      lines.push(<DescriptionText key={idx}>{line}</DescriptionText>);
     });
     return lines;
   };
@@ -100,7 +96,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <MotionWrapper
       initial={initialContainerSize}
       animate={isSelected ? openContainerSize : initialContainerSize}
-      transition={transition}
+      transition={PROJECT_CARD_TRANSITION}
       onClick={() => onCardClick(id)}
     >
       <Container bgColor={primary}>
@@ -114,7 +110,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <TitleBlock>
           <MotionTitle
             initial={false}
-            transition={transition}
+            transition={PROJECT_CARD_TRANSITION}
             animate={{ y: isSelected ? -770 : 0, skewX: -15 }}
             color={secondary}
           >
@@ -136,7 +132,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               skewX: 15,
               y: isSelected ? 0 : 100,
             }}
-            transition={transition}
+            transition={PROJECT_CARD_TRANSITION}
           ></MotionScreencapsImage>
         )}
         {techIcons && (

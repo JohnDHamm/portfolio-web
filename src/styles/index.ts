@@ -1,3 +1,4 @@
-import FONTS from './fonts'
+import CONSTANTS from './constants';
+import FONTS from './fonts';
 
-export { FONTS };
+export { CONSTANTS, FONTS };
