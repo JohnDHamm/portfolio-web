@@ -10,7 +10,7 @@ export const LegendBlock = styled.div`
 export const LegendTextBlock = styled.div`
   position: absolute;
   bottom: 110px;
-  right: -105px;
+  right: -102px;
   width: ${CONSTANTS.PROJECT_CARD_SIZE.CLOSED.height + 'px'};
   transform: rotate(-75deg);
   text-align: center;
