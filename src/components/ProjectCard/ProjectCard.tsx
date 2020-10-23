@@ -80,8 +80,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   const handleMore = (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
-    event.stopPropagation();
-    onMoreClick(id);
+    if (isSelected) {
+      event.stopPropagation();
+      onMoreClick(id);
+    }
   };
 
   const renderDescription = (): JSX.Element[] => {
@@ -148,7 +150,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         )}
         <MotionButtonBlock
           initial={false}
-          animate={{ opacity: isSelected ? 1 : 0 }}
+          animate={{
+            opacity: isSelected ? 1 : 0,
+          }}
         >
           <MoreButton onClick={handleMore} color={colors.primary}>
             SEE MORE
