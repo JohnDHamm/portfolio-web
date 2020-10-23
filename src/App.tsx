@@ -1,25 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  CadenceCoachPage,
+  DidDoDonePage,
+  HomePage,
+  NogPage,
+  TeamTimerProPage,
+  TheBigBoardPage,
+} from './pages';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/projects/teamtimerpro">
+          <TeamTimerProPage />
+        </Route>
+        <Route path="/projects/nog">
+          <NogPage />
+        </Route>
+        <Route path="/projects/diddodone">
+          <DidDoDonePage />
+        </Route>
+        <Route path="/projects/cadencecoach">
+          <CadenceCoachPage />
+        </Route>
+        <Route path="/projects/thebigboard">
+          <TheBigBoardPage />
+        </Route>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route path="*">
+          <div>404 no page</div>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

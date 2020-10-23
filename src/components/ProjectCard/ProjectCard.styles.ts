@@ -29,7 +29,7 @@ export const MotionMainImage = styled(motion.img)`
 export const TitleBlock = styled.div`
   position: absolute;
   bottom: 150px;
-  right: -152px;
+  right: -150px;
   width: 280px;
   transform: rotate(-90deg);
 `;
