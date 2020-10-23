@@ -8,6 +8,10 @@ const { PROJECT_CARD_TRANSITION } = CONSTANTS;
 
 export interface ProjectSectionProps {
   /**
+   * Callback for clicking on "See More" button on ProjectCard
+   */
+  onSeeMore: (id: string) => void;
+  /**
    * Array of Projects
    */
   projects: Project[];
@@ -20,7 +24,10 @@ const LEFT_POSITIONS: number[] = [0, 340, 170, 0, -170, -340];
 /**
  * A component that encapsulates ProjectCards
  */
-export const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
+export const ProjectSection: React.FC<ProjectSectionProps> = ({
+  onSeeMore,
+  projects,
+}) => {
   const [selectedCard, setSelectedCard] = React.useState('');
   const [leftPosition, setLeftPosition] = React.useState(LEFT_POSITIONS[0]);
 
@@ -49,7 +56,7 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
                 <ProjectCard
                   isSelected={selectedCard === project.id}
                   onCardClick={handleCardSelection}
-                  onMoreClick={() => console.log('more', project.id)}
+                  onMoreClick={onSeeMore}
                   project={project}
                 />
               </li>
