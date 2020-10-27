@@ -39,3 +39,30 @@ export const ThinSlash = styled.div<{ color: string }>`
   transform: skewX(-15deg);
   background-color: ${(props) => props.color};
 `;
+
+export const MobileContainer = styled.div`
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+`;
+
+export const MobileLegendText = styled(LegendText)<{ color: string }>`
+  margin-bottom: -1.4rem;
+`;
+
+export const MobileThickSlash = styled.div<{ color: string }>`
+  width: 100%;
+  height: 15px;
+  margin-bottom: 2px;
+  transform: skewX(-15deg);
+  background-color: ${(props) => props.color};
+`;
+
+export const MobileThinSlash = styled.div<{ color: string }>`
+  height: 3px;
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  transform: skewX(-15deg);
+  background-color: ${(props) => props.color};
+`;
