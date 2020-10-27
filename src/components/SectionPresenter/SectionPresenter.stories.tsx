@@ -10,15 +10,13 @@ export default {
   },
 } as Meta;
 
-const Template: Story<SectionPresenterProps> = (args) => (
+export const Desktop: Story<SectionPresenterProps> = (args) => (
   <div style={{ paddingLeft: '8rem' }}>
     <SectionPresenter {...args}>
       <div
         style={{
           width: '300px',
           height: '100px',
-          border: '1px dashed grey',
-          transform: 'skewX(-15deg) translateX(20px)',
           margin: '1rem',
           padding: '2rem',
           textAlign: 'center',
@@ -30,9 +28,36 @@ const Template: Story<SectionPresenterProps> = (args) => (
   </div>
 );
 
-export const Default = Template.bind({});
-
-Default.args = {
+Desktop.args = {
   color: 'darkolivegreen',
   legend: 'LEGEND',
+};
+
+export const Mobile: Story<SectionPresenterProps> = (args) => (
+  <div>
+    <SectionPresenter {...args}>
+      <div
+        style={{
+          width: '300px',
+          height: '100px',
+          margin: '1rem',
+          padding: '2rem',
+          textAlign: 'center',
+        }}
+      >
+        some children
+      </div>
+    </SectionPresenter>
+  </div>
+);
+
+Mobile.args = {
+  color: 'slateblue',
+  legend: 'MOBILE',
+};
+
+Mobile.parameters = {
+  viewport: {
+    defaultViewport: 'mobile2',
+  },
 };

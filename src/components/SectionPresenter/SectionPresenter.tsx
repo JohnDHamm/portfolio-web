@@ -3,9 +3,14 @@ import {
   LegendBlock,
   LegendText,
   LegendTextBlock,
+  MobileContainer,
+  MobileLegendText,
+  MobileThickSlash,
+  MobileThinSlash,
   ThickSlash,
   ThinSlash,
 } from './SectionPresenter.styles';
+import { LayoutSwitch } from '../LayoutSwitch/LayoutSwitch';
 
 export interface SectionPresenterProps {
   /**
@@ -27,16 +32,29 @@ export const SectionPresenter: React.FC<SectionPresenterProps> = ({
   legend,
 }) => {
   return (
-    <div style={{ display: 'flex' }}>
-      <LegendBlock>
-        <LegendTextBlock>
-          <LegendText color={color}>{legend}</LegendText>
-        </LegendTextBlock>
-        <ThickSlash color={color} />
-        <ThinSlash color={color} />
-      </LegendBlock>
-      {children}
-      <ThinSlash color={color} />
-    </div>
+    <LayoutSwitch
+      desktopComponent={
+        <div style={{ display: 'flex' }}>
+          <LegendBlock>
+            <LegendTextBlock>
+              <LegendText color={color}>{legend}</LegendText>
+            </LegendTextBlock>
+            <ThickSlash color={color} />
+            <ThinSlash color={color} />
+          </LegendBlock>
+          {children}
+          <ThinSlash color={color} />
+        </div>
+      }
+      mobileComponent={
+        <MobileContainer>
+          <MobileLegendText color={color}>{legend}</MobileLegendText>
+          <MobileThickSlash color={color} />
+          <MobileThinSlash color={color} />
+          {children}
+          <MobileThinSlash color={color} />
+        </MobileContainer>
+      }
+    />
   );
 };
