@@ -7,6 +7,21 @@ const PROJECT_CARD_TRANSTION: Transition = {
 };
 
 const CONSTANTS = {
+  MOBILE_CONTAINER: {
+    width: '100%',
+    maxWidth: '480px',
+  },
+  MOBILE_PROJECT_CARD_SIZE: {
+    SKEW_X_OFFSET: 21.4, // height of 80 * tan(15deg)
+    CLOSED: {
+      height: 80,
+      width: 'calc(100% - 21.4px)',
+    },
+    OPEN: {
+      height: 320,
+      width: '100%',
+    },
+  },
   PROJECT_CARD_SIZE: {
     CLOSED: {
       height: 300,
