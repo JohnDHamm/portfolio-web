@@ -1,8 +1,15 @@
 import React from 'react';
-import { Container, MotionContainer, StyledUL } from './ProjectSection.styles';
+import {
+  Container,
+  MotionContainer,
+  StyledMobileUL,
+  StyledUL,
+} from './ProjectSection.styles';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
 import { CONSTANTS } from '../../styles';
 import { SectionPresenter } from '../SectionPresenter/SectionPresenter';
+import { LayoutSwitch } from '../LayoutSwitch/LayoutSwitch';
+import { MobileProjectCard } from '../MobileProjectCard/MobileProjectCard';
 
 const { PROJECT_CARD_TRANSITION } = CONSTANTS;
 
@@ -43,17 +50,37 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({
   };
 
   return (
-    <Container>
-      <MotionContainer
-        initial={false}
-        animate={{ x: leftPosition }}
-        transition={PROJECT_CARD_TRANSITION}
-      >
+    <LayoutSwitch
+      desktopComponent={
+        <Container>
+          <MotionContainer
+            initial={false}
+            animate={{ x: leftPosition }}
+            transition={PROJECT_CARD_TRANSITION}
+          >
+            <SectionPresenter legend="PROJECTS" color="#CCC">
+              <StyledUL>
+                {projects.map((project) => (
+                  <li key={project.id}>
+                    <ProjectCard
+                      isSelected={selectedCard === project.id}
+                      onCardClick={handleCardSelection}
+                      onMoreClick={onSeeMore}
+                      project={project}
+                    />
+                  </li>
+                ))}
+              </StyledUL>
+            </SectionPresenter>
+          </MotionContainer>
+        </Container>
+      }
+      mobileComponent={
         <SectionPresenter legend="PROJECTS" color="#CCC">
-          <StyledUL>
+          <StyledMobileUL>
             {projects.map((project) => (
               <li key={project.id}>
-                <ProjectCard
+                <MobileProjectCard
                   isSelected={selectedCard === project.id}
                   onCardClick={handleCardSelection}
                   onMoreClick={onSeeMore}
@@ -61,9 +88,9 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({
                 />
               </li>
             ))}
-          </StyledUL>
+          </StyledMobileUL>
         </SectionPresenter>
-      </MotionContainer>
-    </Container>
+      }
+    />
   );
 };

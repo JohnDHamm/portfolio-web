@@ -20,3 +20,7 @@ export const StyledUL = styled.ul`
   justify-content: center;
   list-style-type: none;
 `;
+
+export const StyledMobileUL = styled(StyledUL)`
+  display: block;
+`;
