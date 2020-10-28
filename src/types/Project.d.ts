@@ -9,6 +9,5 @@ interface Project {
   cardImage?: any;
   mobileCardImage?: any;
   screencaps?: any;
-  mobileScreencaps?: any;
   techIcons?: any;
 }

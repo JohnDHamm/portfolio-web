@@ -55,7 +55,7 @@ export const MotionScreencapsImage = styled(motion.img)`
   bottom: 0px;
   left: 50%;
   height: 120px;
-  width: 480px;
+  width: 600px;
 `;
 
 export const MotionButtonBlock = styled(motion.div)`

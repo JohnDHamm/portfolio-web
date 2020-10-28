@@ -10,7 +10,6 @@ export const MOCK_PROJECT_1: Project = {
   ],
   cardImage: require('./images/mockproject1.png'),
   mobileCardImage: require('./images/mockproject1_mobile.png'),
-  mobileScreencaps: require('./images/mockproject1_mobileScreencaps.png'),
 };
 
 export const MOCK_PROJECT_2: Project = {

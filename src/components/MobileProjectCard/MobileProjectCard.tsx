@@ -68,7 +68,7 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
     description,
     id,
     mobileCardImage,
-    mobileScreencaps,
+    screencaps,
     title,
   } = project;
 
@@ -104,7 +104,7 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
             src={mobileCardImage}
             initial={false}
             animate={{
-              opacity: isSelected ? 0.5 : 1,
+              opacity: isSelected ? 0.3 : 0.9,
               skewX: isSelected ? 0 : 15,
               x: '-50%',
             }}
@@ -118,15 +118,9 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
         >
           {title.toUpperCase()}
         </MotionTitle>
-        <MotionDescriptionBlock
-          initial={false}
-          animate={{ opacity: isSelected ? 1 : 0 }}
-        >
-          {renderDescription()}
-        </MotionDescriptionBlock>
-        {mobileScreencaps && (
+        {screencaps && (
           <MotionScreencapsImage
-            src={mobileScreencaps}
+            src={screencaps}
             initial={false}
             animate={{
               opacity: isSelected ? 1 : 0,
@@ -136,6 +130,12 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
             transition={PROJECT_CARD_TRANSITION}
           ></MotionScreencapsImage>
         )}
+        <MotionDescriptionBlock
+          initial={false}
+          animate={{ opacity: isSelected ? 1 : 0 }}
+        >
+          {renderDescription()}
+        </MotionDescriptionBlock>
         <MotionButtonBlock
           initial={false}
           animate={{

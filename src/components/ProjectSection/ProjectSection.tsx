@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Container,
   MotionContainer,
+  StyledLI,
   StyledMobileUL,
   StyledUL,
 } from './ProjectSection.styles';
@@ -61,14 +62,14 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({
             <SectionPresenter legend="PROJECTS" color="#CCC">
               <StyledUL>
                 {projects.map((project) => (
-                  <li key={project.id}>
+                  <StyledLI key={project.id}>
                     <ProjectCard
                       isSelected={selectedCard === project.id}
                       onCardClick={handleCardSelection}
                       onMoreClick={onSeeMore}
                       project={project}
                     />
-                  </li>
+                  </StyledLI>
                 ))}
               </StyledUL>
             </SectionPresenter>
@@ -79,14 +80,14 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({
         <SectionPresenter legend="PROJECTS" color="#CCC">
           <StyledMobileUL>
             {projects.map((project) => (
-              <li key={project.id}>
+              <StyledLI key={project.id}>
                 <MobileProjectCard
                   isSelected={selectedCard === project.id}
                   onCardClick={handleCardSelection}
                   onMoreClick={onSeeMore}
                   project={project}
                 />
-              </li>
+              </StyledLI>
             ))}
           </StyledMobileUL>
         </SectionPresenter>

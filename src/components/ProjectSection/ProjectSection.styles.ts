@@ -24,3 +24,7 @@ export const StyledUL = styled.ul`
 export const StyledMobileUL = styled(StyledUL)`
   display: block;
 `;
+
+export const StyledLI = styled.li`
+  text-align: left;
+`;
