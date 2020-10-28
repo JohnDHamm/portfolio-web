@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { CONSTANTS, FONTS } from '../../styles';
 
+const { MOBILE_CONTAINER } = CONSTANTS;
+
 export const LegendBlock = styled.div`
   position: relative;
   display: flex;
@@ -41,13 +43,14 @@ export const ThinSlash = styled.div<{ color: string }>`
 `;
 
 export const MobileContainer = styled.div`
-  width: 100%;
-  max-width: 480px;
+  width: ${MOBILE_CONTAINER.width};
+  max-width: ${MOBILE_CONTAINER.maxWidth};
   text-align: center;
 `;
 
 export const MobileLegendText = styled(LegendText)<{ color: string }>`
-  margin-bottom: -1.4rem;
+  font-size: 3.5rem;
+  margin-bottom: -1rem;
 `;
 
 export const MobileThickSlash = styled.div<{ color: string }>`

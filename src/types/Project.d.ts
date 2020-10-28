@@ -7,6 +7,7 @@ interface Project {
   title: string;
   description: string[];
   cardImage?: any;
+  mobileCardImage?: any;
   screencaps?: any;
   techIcons?: any;
 }

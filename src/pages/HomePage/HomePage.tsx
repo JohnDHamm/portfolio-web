@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectsContainer } from './HomePage.styles';
+import { ContentContainer, ProjectsContainer } from './HomePage.styles';
 import { ProjectSection } from '../../components';
 import { projectsData } from '../../data/projects';
 import { useHistory } from 'react-router-dom';
@@ -14,10 +14,11 @@ export const HomePage: React.FC = () => {
 
   return (
     <div>
-      <h1>Home</h1>
-      <ProjectsContainer>
-        <ProjectSection projects={projectsData} onSeeMore={handleMore} />
-      </ProjectsContainer>
+      <ContentContainer>
+        <ProjectsContainer>
+          <ProjectSection projects={projectsData} onSeeMore={handleMore} />
+        </ProjectsContainer>
+      </ContentContainer>
     </div>
   );
 };

@@ -6,17 +6,15 @@ import {
   MotionButtonBlock,
   MotionWrapper,
   MotionScreencapsImage,
-  MotionTechImage,
   MotionDescriptionBlock,
   MotionTitle,
   DescriptionText,
-  TitleBlock,
-} from './ProjectCard.styles';
+} from './MobileProjectCard.styles';
 import { CONSTANTS } from '../../styles';
 
-const { PROJECT_CARD_SIZE, PROJECT_CARD_TRANSITION } = CONSTANTS;
+const { MOBILE_PROJECT_CARD_SIZE, PROJECT_CARD_TRANSITION } = CONSTANTS;
 
-export interface ProjectCardProps {
+export interface MobileProjectCardProps {
   /**
    * Is this project selected? (opens the card)
    */
@@ -36,42 +34,41 @@ export interface ProjectCardProps {
 }
 
 type ContainerSize = {
-  y: number;
-  width: number;
   height: number;
+  width: string;
+  x: number;
   skewX: number;
 };
 
 const initialContainerSize: ContainerSize = {
-  y: 0,
-  width: PROJECT_CARD_SIZE.CLOSED.width,
-  height: PROJECT_CARD_SIZE.CLOSED.height,
+  height: MOBILE_PROJECT_CARD_SIZE.CLOSED.height,
+  width: MOBILE_PROJECT_CARD_SIZE.CLOSED.width,
+  x: MOBILE_PROJECT_CARD_SIZE.SKEW_X_OFFSET / 2,
   skewX: -15,
 };
 
 const openContainerSize: ContainerSize = {
-  y: -10,
-  width: PROJECT_CARD_SIZE.OPEN.width,
-  height: PROJECT_CARD_SIZE.OPEN.height,
-  skewX: -15,
+  height: MOBILE_PROJECT_CARD_SIZE.OPEN.height,
+  width: MOBILE_PROJECT_CARD_SIZE.OPEN.width,
+  x: 0,
+  skewX: 0,
 };
 
 /**
- * Animated project card component
+ * Animated project card component for mobile/tablet device size
  */
-export const ProjectCard: React.FC<ProjectCardProps> = ({
+export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
   isSelected,
   onCardClick,
   onMoreClick,
   project,
 }) => {
   const {
-    cardImage,
     colors,
     description,
     id,
+    mobileCardImage,
     screencaps,
-    techIcons,
     title,
   } = project;
 
@@ -102,56 +99,48 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       onClick={() => onCardClick(id)}
     >
       <Container bgColor={primary}>
-        {cardImage && (
+        {mobileCardImage && (
           <MotionMainImage
-            src={cardImage}
+            src={mobileCardImage}
             initial={false}
-            animate={{ opacity: isSelected ? 0.3 : 0.9, skewX: 15, x: -40 }}
+            animate={{
+              opacity: isSelected ? 0.3 : 0.9,
+              skewX: isSelected ? 0 : 15,
+              x: '-50%',
+            }}
           />
         )}
-        <TitleBlock>
-          <MotionTitle
-            initial={false}
-            transition={PROJECT_CARD_TRANSITION}
-            animate={{ y: isSelected ? -770 : 0, skewX: -15 }}
-            color={secondary}
-          >
-            {title.toUpperCase()}
-          </MotionTitle>
-        </TitleBlock>
-        <MotionDescriptionBlock
+        <MotionTitle
           initial={false}
-          animate={{ opacity: isSelected ? 1 : 0, skewX: 15 }}
+          transition={PROJECT_CARD_TRANSITION}
+          animate={{ y: isSelected ? -290 : 0, skewX: isSelected ? 0 : 15 }}
+          color={secondary}
         >
-          {renderDescription()}
-        </MotionDescriptionBlock>
+          {title.toUpperCase()}
+        </MotionTitle>
         {screencaps && (
           <MotionScreencapsImage
             src={screencaps}
             initial={false}
             animate={{
               opacity: isSelected ? 1 : 0,
-              skewX: 15,
               y: isSelected ? 0 : 100,
+              x: '-50%',
             }}
             transition={PROJECT_CARD_TRANSITION}
           ></MotionScreencapsImage>
         )}
-        {techIcons && (
-          <MotionTechImage
-            src={techIcons}
-            initial={false}
-            animate={{
-              opacity: isSelected ? 1 : 0,
-              skewX: 15,
-              x: isSelected ? 0 : 100,
-            }}
-          ></MotionTechImage>
-        )}
+        <MotionDescriptionBlock
+          initial={false}
+          animate={{ opacity: isSelected ? 1 : 0 }}
+        >
+          {renderDescription()}
+        </MotionDescriptionBlock>
         <MotionButtonBlock
           initial={false}
           animate={{
             opacity: isSelected ? 1 : 0,
+            skewX: -15,
           }}
         >
           <MoreButton onClick={handleMore} color={colors.primary}>
