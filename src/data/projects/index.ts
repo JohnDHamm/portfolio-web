@@ -18,10 +18,11 @@ const DidDoDone_Project: Project = {
     primary: '#4c408f',
   },
   description: [
-    `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
-    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place? I better knock, I suppose. There doesn't seem to be anyone there. Let's go back and tell Master Luke.`,
+    `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave?`,
+    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place?`,
   ],
   cardImage: require('./images/diddodone_card.png'),
+  mobileCardImage: require('./images/diddodone_mobileCard.png'),
   screencaps: require('./images/diddodone_screencaps.png'),
   techIcons: require('./images/diddodone_tech.png'),
 };
