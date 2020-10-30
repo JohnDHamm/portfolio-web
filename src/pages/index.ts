@@ -2,7 +2,7 @@ import { CadenceCoachPage } from './projectPages/CadenceCoachPage/CadenceCoachPa
 import { DidDoDonePage } from './projectPages/DidDoDonePage/DidDoDonePage';
 import { HomePage } from './HomePage/HomePage';
 import { NogPage } from './projectPages/NogPage/NogPage';
-import { TeamTimerProPage } from './projectPages/TeamTimerProPage/TeamTimerProPage';
+import { TeamTimerPage } from './projectPages/TeamTimerPage/TeamTimerPage';
 import { TheBigBoardPage } from './projectPages/TheBigBoardPage/TheBigBoardPage';
 
 export {
@@ -10,6 +10,6 @@ export {
   DidDoDonePage,
   HomePage,
   NogPage,
-  TeamTimerProPage,
+  TeamTimerPage,
   TheBigBoardPage,
 };
