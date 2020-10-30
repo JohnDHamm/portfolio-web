@@ -1,6 +1,6 @@
-const TeamTimerPro_Project: Project = {
-  id: 'teamtimerpro',
-  title: 'Team Timer Pro',
+export const TeamTimer_Project: Project = {
+  id: 'teamtimer',
+  title: 'Team Timer',
   colors: {
     primary: '#0B163B',
   },
@@ -11,7 +11,7 @@ const TeamTimerPro_Project: Project = {
   // cardImage: require('../../mocks/projects/images/mockproject1.png'),
 };
 
-const DidDoDone_Project: Project = {
+export const DidDoDone_Project: Project = {
   id: 'diddodone',
   title: 'Did? Do! Done.',
   colors: {
@@ -27,7 +27,7 @@ const DidDoDone_Project: Project = {
   techIcons: require('./images/diddodone_tech.png'),
 };
 
-const CadenceCoach_Project: Project = {
+export const CadenceCoach_Project: Project = {
   id: 'cadencecoach',
   title: 'Cadence Coach',
   colors: {
@@ -40,7 +40,7 @@ const CadenceCoach_Project: Project = {
   // cardImage: require('../../mocks/projects/images/mockproject1.png'),
 };
 
-const Nog_Project: Project = {
+export const Nog_Project: Project = {
   id: 'nog',
   title: 'Nog',
   colors: {
@@ -53,7 +53,7 @@ const Nog_Project: Project = {
   // cardImage: require('../../mocks/projects/images/mockproject1.png'),
 };
 
-const TheBigBoard_Project: Project = {
+export const TheBigBoard_Project: Project = {
   id: 'thebigboard',
   title: 'The Big Board',
   colors: {
@@ -69,7 +69,7 @@ const TheBigBoard_Project: Project = {
 export const projectsData: Project[] = [
   TheBigBoard_Project,
   DidDoDone_Project,
-  TeamTimerPro_Project,
+  TeamTimer_Project,
   Nog_Project,
   CadenceCoach_Project,
 ];
