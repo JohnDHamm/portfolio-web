@@ -33,6 +33,11 @@ const CONSTANTS = {
     },
   },
   PROJECT_CARD_TRANSITION: PROJECT_CARD_TRANSTION,
+  SCREEN: {
+    MOBILE: 'max-width: 1024px',
+    DESKTOP: 'min-width: 1025px',
+  },
+  TECH_ICONS_HEIGHT: '60px',
 };
 
 export default CONSTANTS;
