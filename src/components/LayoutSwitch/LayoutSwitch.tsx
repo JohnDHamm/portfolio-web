@@ -1,5 +1,5 @@
 import React from 'react';
-import { DesktopContainer, MobileContainer } from './LayoutSwitch.styles';
+import { useViewport } from '../../hooks';
 
 export interface LayoutSwitchProps {
   /**
@@ -14,16 +14,13 @@ export interface LayoutSwitchProps {
 
 /**
  *
- * A component to conditionally render choice of components based on screen width
+ * A component to conditionally render choice of components based on screen width - custom useViewport hook not working in storybook
  */
 export const LayoutSwitch: React.FC<LayoutSwitchProps> = ({
   desktopComponent,
   mobileComponent,
 }) => {
-  return (
-    <>
-      <DesktopContainer>{desktopComponent}</DesktopContainer>
-      <MobileContainer>{mobileComponent}</MobileContainer>
-    </>
-  );
+  const { width } = useViewport();
+
+  return width > 1024 ? desktopComponent : mobileComponent;
 };
