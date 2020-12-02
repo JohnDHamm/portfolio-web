@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { CONSTANTS, FONTS } from '../../styles';
 
 const { MOBILE_CONTAINER } = CONSTANTS;
-const TECH_HEIGHT = '90px';
+const TECH_HEIGHT = '100px';
 
 export const LegendBlock = styled.div`
   position: relative;
@@ -12,8 +12,8 @@ export const LegendBlock = styled.div`
 
 export const LegendTextBlock = styled.div`
   position: absolute;
-  bottom: 23px;
-  right: -14px;
+  bottom: 30px;
+  right: -19px;
   width: ${TECH_HEIGHT};
   transform: rotate(-75deg);
   text-align: center;

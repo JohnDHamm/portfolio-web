@@ -49,7 +49,7 @@ export const TechSectionPresenter: React.FC<TechSectionPresenterProps> = ({
   return (
     <LayoutSwitch
       desktopComponent={
-        <div style={{ display: 'flex' }}>
+        <div style={{ display: 'flex', margin: '1.5rem 0' }}>
           <LegendBlock>
             <LegendTextBlock>
               <LegendText color={color}>TECH</LegendText>
@@ -74,7 +74,7 @@ export const TechSectionPresenter: React.FC<TechSectionPresenterProps> = ({
         </div>
       }
       mobileComponent={
-        <div style={{ width: '100%' }}>
+        <div style={{ width: '100%', margin: '1.5rem 0' }}>
           <MobileContainer>
             <MobileLegendText color={color}>TECH</MobileLegendText>
             <MobileThickSlash color={color} />
