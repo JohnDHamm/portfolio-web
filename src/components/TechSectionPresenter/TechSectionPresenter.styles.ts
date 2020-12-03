@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { CONSTANTS, FONTS } from '../../styles';
 
 const { MOBILE_CONTAINER } = CONSTANTS;
-const TECH_HEIGHT = '90px';
+const TECH_HEIGHT = '100px';
 
 export const LegendBlock = styled.div`
   position: relative;
@@ -12,8 +12,8 @@ export const LegendBlock = styled.div`
 
 export const LegendTextBlock = styled.div`
   position: absolute;
-  bottom: 23px;
-  right: -14px;
+  bottom: 30px;
+  right: -19px;
   width: ${TECH_HEIGHT};
   transform: rotate(-75deg);
   text-align: center;
@@ -44,7 +44,6 @@ export const ThinSlash = styled.div<{ color: string }>`
 `;
 
 export const ContentBlock = styled.div`
-  /* border: 1px dashed grey; */
   height: ${TECH_HEIGHT};
   display: flex;
   flex-direction: row;
@@ -52,7 +51,7 @@ export const ContentBlock = styled.div`
   align-items: center;
   margin: 0 0.25rem;
 
-  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
+  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
     height: auto;
     width: 100%;
     flex-direction: column;
@@ -61,13 +60,12 @@ export const ContentBlock = styled.div`
 `;
 
 export const IconsBlock = styled.div`
-  /* border: 1px dotted yellow; */
   height: 60px;
   display: flex;
   flex-direction: row;
   margin-left: 0.25rem;
   margin-right: 1rem;
-  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
+  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
     margin: 0.5rem 0;
   }
 `;

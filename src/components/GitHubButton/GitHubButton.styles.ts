@@ -12,10 +12,6 @@ export const Container = styled.div`
   &:hover {
     border: 1px solid ${COLORS.WHITE};
   }
-
-  @media screen and (${SCREEN.MOBILE}) {
-    /* margin: 0.5rem 0; */
-  }
 `;
 
 export const ContentBlock = styled.div`
@@ -24,7 +20,7 @@ export const ContentBlock = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (${SCREEN.MOBILE}) {
+  @media screen and (${SCREEN.TABLET}) {
     flex-direction: row;
   }
 `;
@@ -41,7 +37,7 @@ export const StyledText = styled.p`
   padding-top: 0.25rem;
   padding-left: 0;
 
-  @media screen and (${SCREEN.MOBILE}) {
+  @media screen and (${SCREEN.TABLET}) {
     padding-left: 0.25rem;
     padding-top: 0;
   }

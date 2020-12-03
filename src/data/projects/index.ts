@@ -21,10 +21,10 @@ export const DidDoDone_Project: Project = {
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave?`,
     `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place?`,
   ],
-  cardImage: require('./images/diddodone_card.png'),
-  mobileCardImage: require('./images/diddodone_mobileCard.png'),
-  screencaps: require('./images/diddodone_screencaps.png'),
-  techIcons: require('./images/diddodone_tech.png'),
+  cardImage: require('./diddodone/diddodone_card.png'),
+  mobileCardImage: require('./diddodone/diddodone_mobileCard.png'),
+  screencaps: require('./diddodone/diddodone_screencaps.png'),
+  techIcons: require('./diddodone/diddodone_tech.png'),
 };
 
 export const CadenceCoach_Project: Project = {
