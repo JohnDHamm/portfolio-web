@@ -52,7 +52,7 @@ export const ContentBlock = styled.div`
   align-items: center;
   margin: 0 0.25rem;
 
-  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
+  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
     height: auto;
     width: 100%;
     flex-direction: column;
@@ -67,7 +67,7 @@ export const IconsBlock = styled.div`
   flex-direction: row;
   margin-left: 0.25rem;
   margin-right: 1rem;
-  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
+  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
     margin: 0.5rem 0;
   }
 `;

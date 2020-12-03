@@ -7,6 +7,13 @@ const PROJECT_CARD_TRANSTION: Transition = {
 };
 
 const CONSTANTS = {
+  DESKTOP_SCREENSHOT: {
+    ASPECT_RATIO: 1920 / 1170,
+    DESKTOP_WIDTH: '800px',
+    DESKTOP_HEIGHT: '488px',
+    MOBILE_MAX_WIDTH: '480px',
+    MOBILE_MAX_HEIGHT: '292px',
+  },
   MOBILE_CONTAINER: {
     width: '100%',
     maxWidth: '480px',
@@ -34,7 +41,8 @@ const CONSTANTS = {
   },
   PROJECT_CARD_TRANSITION: PROJECT_CARD_TRANSTION,
   SCREEN: {
-    MOBILE: 'max-width: 1024px',
+    MOBILE: 'max-width: 767px',
+    TABLET: 'max-width: 1024px',
     DESKTOP: 'min-width: 1025px',
   },
   TECH_ICONS_HEIGHT: '60px',
