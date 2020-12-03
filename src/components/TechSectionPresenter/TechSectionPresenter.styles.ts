@@ -44,7 +44,6 @@ export const ThinSlash = styled.div<{ color: string }>`
 `;
 
 export const ContentBlock = styled.div`
-  /* border: 1px dashed grey; */
   height: ${TECH_HEIGHT};
   display: flex;
   flex-direction: row;
@@ -61,7 +60,6 @@ export const ContentBlock = styled.div`
 `;
 
 export const IconsBlock = styled.div`
-  /* border: 1px dotted yellow; */
   height: 60px;
   display: flex;
   flex-direction: row;

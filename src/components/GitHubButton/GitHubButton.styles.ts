@@ -12,10 +12,6 @@ export const Container = styled.div`
   &:hover {
     border: 1px solid ${COLORS.WHITE};
   }
-
-  @media screen and (${SCREEN.TABLET}) {
-    /* margin: 0.5rem 0; */
-  }
 `;
 
 export const ContentBlock = styled.div`
