@@ -29,6 +29,10 @@ const CONSTANTS = {
       width: '100%',
     },
   },
+  MOBILE_SCREENSHOT: {
+    WIDTH: '240px',
+    HEIGHT: '477px',
+  },
   PROJECT_CARD_SIZE: {
     CLOSED: {
       height: 300,
