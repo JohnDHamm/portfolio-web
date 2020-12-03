@@ -28,7 +28,7 @@ export const NavButton = styled.div`
   height: 36px;
   position: absolute;
   top: calc(50% - 18px);
-  z-index: 100;
+  z-index: 10;
 `;
 
 export const PrevNavButton = styled(NavButton)`
