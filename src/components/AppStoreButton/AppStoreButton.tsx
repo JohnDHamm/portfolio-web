@@ -1,9 +1,16 @@
 import React from 'react';
 
 export interface AppStoreButtonProps {
+  /**
+   * url for Apple App Store
+   */
   url: string;
 }
 
+/**
+ *
+ * Apple App Store Badge with link to app page
+ */
 export const AppStoreButton: React.FC<AppStoreButtonProps> = ({ url }) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">

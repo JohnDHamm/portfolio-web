@@ -3,6 +3,7 @@ import {
   AnimatedPageTransition,
   AppStoreButton,
   // DesktopSlideshow,
+  GooglePlayButton,
   MobileSlideshow,
   TechSectionPresenter,
   VideoPlayer,
@@ -82,6 +83,7 @@ export const DidDoDonePage: React.FC = () => {
           githubURL="https://github.com/JohnDHamm/did-do-done-RN-app"
         />
         <AppStoreButton url="https://apps.apple.com/us/app/did-do-done/id1522794964" />
+        <GooglePlayButton url="https://play.google.com/store/apps/details?id=com.cadencecoach" />
       </CenteredContent>
     </StyledPageWrapper>
   );

@@ -2,6 +2,7 @@ import { AnimatedPageTransition } from './AnimatedPageTransition/AnimatedPageTra
 import { AppStoreButton } from './AppStoreButton/AppStoreButton';
 import { DesktopSlideshow } from './DesktopSlideshow/DesktopSlideshow';
 import { GitHubButton } from './GitHubButton/GitHubButton';
+import { GooglePlayButton } from './GooglePlayButton/GooglePlayButton';
 import { LayoutSwitch } from './LayoutSwitch/LayoutSwitch';
 import { MobileProjectCard } from './MobileProjectCard/MobileProjectCard';
 import { MobileSlideshow } from './MobileSlideshow/MobileSlideshow';
@@ -17,6 +18,7 @@ export {
   AppStoreButton,
   DesktopSlideshow,
   GitHubButton,
+  GooglePlayButton,
   LayoutSwitch,
   MobileProjectCard,
   MobileSlideshow,
