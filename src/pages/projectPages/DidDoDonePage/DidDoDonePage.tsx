@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AnimatedPageTransition,
+  AppStoreButton,
   // DesktopSlideshow,
   MobileSlideshow,
   TechSectionPresenter,
@@ -79,7 +80,8 @@ export const DidDoDonePage: React.FC = () => {
             TECH_ICONS.ADOBE_XD,
           ]}
           githubURL="https://github.com/JohnDHamm/did-do-done-RN-app"
-        ></TechSectionPresenter>
+        />
+        <AppStoreButton url="https://apps.apple.com/us/app/did-do-done/id1522794964" />
       </CenteredContent>
     </StyledPageWrapper>
   );

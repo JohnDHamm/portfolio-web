@@ -1,4 +1,5 @@
 import { AnimatedPageTransition } from './AnimatedPageTransition/AnimatedPageTransition';
+import { AppStoreButton } from './AppStoreButton/AppStoreButton';
 import { DesktopSlideshow } from './DesktopSlideshow/DesktopSlideshow';
 import { GitHubButton } from './GitHubButton/GitHubButton';
 import { LayoutSwitch } from './LayoutSwitch/LayoutSwitch';
@@ -13,6 +14,7 @@ import { VideoPlayer } from './VideoPlayer/VideoPlayer';
 
 export {
   AnimatedPageTransition,
+  AppStoreButton,
   DesktopSlideshow,
   GitHubButton,
   LayoutSwitch,
