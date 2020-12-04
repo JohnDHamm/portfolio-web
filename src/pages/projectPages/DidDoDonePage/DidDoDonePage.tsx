@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AnimatedPageTransition,
   AppStoreButton,
+  Button,
   // DesktopSlideshow,
   GooglePlayButton,
   MobileSlideshow,
@@ -84,6 +85,14 @@ export const DidDoDonePage: React.FC = () => {
         />
         <AppStoreButton url="https://apps.apple.com/us/app/did-do-done/id1522794964" />
         <GooglePlayButton url="https://play.google.com/store/apps/details?id=com.cadencecoach" />
+        <a
+          href="http://demo.nogworld.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <Button>TRY THE DEMO</Button>
+        </a>
       </CenteredContent>
     </StyledPageWrapper>
   );
