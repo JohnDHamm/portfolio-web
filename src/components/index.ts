@@ -9,6 +9,7 @@ import { ProjectSection } from './ProjectSection/ProjectSection';
 import { SectionPresenter } from './SectionPresenter/SectionPresenter';
 import { SlideshowNavButton } from './SlideshowNavButton/SlideshowNavButton';
 import { TechSectionPresenter } from './TechSectionPresenter/TechSectionPresenter';
+import { VideoPlayer } from './VideoPlayer/VideoPlayer';
 
 export {
   AnimatedPageTransition,
@@ -22,4 +23,5 @@ export {
   SectionPresenter,
   SlideshowNavButton,
   TechSectionPresenter,
+  VideoPlayer,
 };

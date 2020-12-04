@@ -4,9 +4,11 @@ import {
   // DesktopSlideshow,
   MobileSlideshow,
   TechSectionPresenter,
+  VideoPlayer,
 } from '../../../components';
 import {
   CenteredContent,
+  ContentWithMargins,
   Logo,
   StyledPageWrapper,
   StyledTextBlock,
@@ -57,10 +59,18 @@ export const DidDoDonePage: React.FC = () => {
             "This is the caption for image 3. Let's make it a longer caption to test how it looks wrapping.",
           ]}
         /> */}
-        <MobileSlideshow
-          images={DidDoDoneMobileScreenshots}
-          captions={DidDoDoneMobileCaptions}
-        />
+        <ContentWithMargins top="2rem" bottom="4rem">
+          <MobileSlideshow
+            images={DidDoDoneMobileScreenshots}
+            captions={DidDoDoneMobileCaptions}
+          />
+        </ContentWithMargins>
+        <ContentWithMargins top="2rem" bottom="4rem">
+          <VideoPlayer
+            url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
+            caption="Here's some caption for the video."
+          />
+        </ContentWithMargins>
         <TechSectionPresenter
           color={COLORS.WHITE}
           techIcons={[
