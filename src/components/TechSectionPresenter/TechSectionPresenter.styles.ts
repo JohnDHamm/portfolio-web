@@ -66,6 +66,7 @@ export const IconsBlock = styled.div`
   margin-left: 0.25rem;
   margin-right: 1rem;
   @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+    height: 48px;
     margin: 0.5rem 0;
   }
 `;
@@ -73,6 +74,10 @@ export const IconsBlock = styled.div`
 export const Icon = styled.img`
   height: 60px;
   margin: 0 0.5rem;
+
+  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+    height: 48px;
+  }
 `;
 
 export const MobileContainer = styled.div`

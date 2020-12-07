@@ -13,7 +13,7 @@ export const StyledPageWrapper = styled.div<{ bgColor: string }>`
 `;
 
 export const CenteredContent = styled.div`
-  /* border: 1px dashed grey; */
+  /* border: 1px dashed lightgrey; */
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
@@ -21,6 +21,10 @@ export const CenteredContent = styled.div`
   align-items: center;
 
   @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+    max-width: 600px;
+  }
+
+  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
     width: 90%;
     max-width: 480px;
   }
@@ -28,6 +32,7 @@ export const CenteredContent = styled.div`
 
 export const Logo = styled.img`
   width: 360px;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 
   @media screen and (${CONSTANTS.SCREEN.TABLET}) {
@@ -41,6 +46,7 @@ export const StyledTextBlock = styled.div`
   max-width: 800px;
 
   @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+    max-width: 480px;
     padding: 0.25rem 0;
   }
 
@@ -59,4 +65,11 @@ export const StyledTextBlock = styled.div`
 export const ContentWithMargins = styled.div<{ top: string; bottom: string }>`
   margin-top: ${(props) => props.top};
   margin-bottom: ${(props) => props.bottom};
+`;
+
+export const HomeLink = styled.a`
+  font-family: ${FONTS.PRIMARY};
+  font-size: 1rem;
+  color: ${COLORS.WHITE};
+  text-decoration: none;
 `;
