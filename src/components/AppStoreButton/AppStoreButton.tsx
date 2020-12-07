@@ -13,7 +13,12 @@ export interface AppStoreButtonProps {
  */
 export const AppStoreButton: React.FC<AppStoreButtonProps> = ({ url }) => {
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ margin: '0.5rem 1rem' }}
+    >
       <svg
         id="livetype"
         xmlns="http://www.w3.org/2000/svg"

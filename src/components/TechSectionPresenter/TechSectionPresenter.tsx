@@ -74,7 +74,14 @@ export const TechSectionPresenter: React.FC<TechSectionPresenterProps> = ({
         </div>
       }
       mobileComponent={
-        <div style={{ width: '100%', margin: '1.5rem 0' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            width: '100%',
+            margin: '1.5rem 0',
+          }}
+        >
           <MobileContainer>
             <MobileLegendText color={color}>TECH</MobileLegendText>
             <MobileThickSlash color={color} />

@@ -14,7 +14,12 @@ export interface GooglePlayButtonProps {
  */
 export const GooglePlayButton: React.FC<GooglePlayButtonProps> = ({ url }) => {
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ margin: '0.5rem 1rem' }}
+    >
       <img
         src={GooglePlayBadge}
         alt="Get it on Google Play"
