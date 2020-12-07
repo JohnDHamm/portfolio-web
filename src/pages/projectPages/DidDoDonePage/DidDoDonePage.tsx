@@ -3,7 +3,7 @@ import {
   AnimatedPageTransition,
   AppStoreButton,
   Button,
-  // DesktopSlideshow,
+  DesktopSlideshow,
   GooglePlayButton,
   MobileSlideshow,
   TechSectionPresenter,
@@ -12,6 +12,7 @@ import {
 import {
   CenteredContent,
   ContentWithMargins,
+  HomeLink,
   Logo,
   StyledPageWrapper,
   StyledTextBlock,
@@ -25,9 +26,9 @@ import {
   DidDoDoneMobileScreenshots,
 } from '../../../data/projects/diddodone/mobile_slideshow';
 
-// const DESKTOP_TEST01 = require('../../../mocks/desktop_screenshots_slideshow_test01.png');
-// const DESKTOP_TEST02 = require('../../../mocks/desktop_screenshots_slideshow_test02.png');
-// const DESKTOP_TEST03 = require('../../../mocks/desktop_screenshots_slideshow_test03.png');
+const DESKTOP_TEST01 = require('../../../mocks/desktop_screenshots_slideshow_test01.png');
+const DESKTOP_TEST02 = require('../../../mocks/desktop_screenshots_slideshow_test02.png');
+const DESKTOP_TEST03 = require('../../../mocks/desktop_screenshots_slideshow_test03.png');
 
 const { colors } = DidDoDone_Project;
 
@@ -40,6 +41,9 @@ export const DidDoDonePage: React.FC = () => {
         color={colors.primary}
       />
       <CenteredContent>
+        <div style={{ width: '100%' }}>
+          <HomeLink href="/">&lt; home</HomeLink>
+        </div>
         <Logo src={DDDlogo} alt="logo" />
         <StyledTextBlock>
           <p>Did Do Done</p>
@@ -54,14 +58,16 @@ export const DidDoDonePage: React.FC = () => {
             doesn't seem to be anyone there. Let's go back and tell Master Luke.
           </p>
         </StyledTextBlock>
-        {/* <DesktopSlideshow
-          images={[DESKTOP_TEST01, DESKTOP_TEST02, DESKTOP_TEST03]}
-          captions={[
-            'This is the caption for image 1.',
-            'Another caption.',
-            "This is the caption for image 3. Let's make it a longer caption to test how it looks wrapping.",
-          ]}
-        /> */}
+        <ContentWithMargins top="2rem" bottom="4rem">
+          <DesktopSlideshow
+            images={[DESKTOP_TEST01, DESKTOP_TEST02, DESKTOP_TEST03]}
+            captions={[
+              'This is the caption for image 1.',
+              'Another caption.',
+              "This is the caption for image 3. Let's make it a longer caption to test how it looks wrapping.",
+            ]}
+          />
+        </ContentWithMargins>
         <ContentWithMargins top="2rem" bottom="4rem">
           <MobileSlideshow
             images={DidDoDoneMobileScreenshots}
@@ -85,14 +91,19 @@ export const DidDoDonePage: React.FC = () => {
         />
         <AppStoreButton url="https://apps.apple.com/us/app/did-do-done/id1522794964" />
         <GooglePlayButton url="https://play.google.com/store/apps/details?id=com.cadencecoach" />
-        <a
-          href="http://demo.nogworld.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: 'none' }}
-        >
-          <Button>TRY THE DEMO</Button>
-        </a>
+        <ContentWithMargins top="1rem" bottom="1rem">
+          <a
+            href="http://demo.nogworld.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none' }}
+          >
+            <Button>TRY THE DEMO</Button>
+          </a>
+        </ContentWithMargins>
+        <ContentWithMargins top="3rem" bottom="0rem">
+          <HomeLink href="/">&lt; home</HomeLink>
+        </ContentWithMargins>
       </CenteredContent>
     </StyledPageWrapper>
   );
