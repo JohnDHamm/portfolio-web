@@ -1,0 +1,33 @@
+export const TeamTimerMobileScreenshots: any[] = [
+  require('./teamtimerpro_mobile_slideshow_01.png'),
+  require('./teamtimerpro_mobile_slideshow_02.png'),
+  require('./teamtimerpro_mobile_slideshow_03.png'),
+  require('./teamtimerpro_mobile_slideshow_04.png'),
+  require('./teamtimerpro_mobile_slideshow_05.png'),
+  require('./teamtimerpro_mobile_slideshow_06.png'),
+  require('./teamtimerpro_mobile_slideshow_07.png'),
+  require('./teamtimerpro_mobile_slideshow_08.png'),
+  require('./teamtimerpro_mobile_slideshow_09.png'),
+  require('./teamtimerpro_mobile_slideshow_10.png'),
+  require('./teamtimerpro_mobile_slideshow_11.png'),
+  require('./teamtimerpro_mobile_slideshow_12.png'),
+  require('./teamtimerpro_mobile_slideshow_13.png'),
+  require('./teamtimerpro_mobile_slideshow_14.png'),
+];
+
+export const TeamTimerMobileCaptions: string[] = [
+  'one',
+  'two',
+  'three',
+  'four',
+  'five',
+  'six',
+  'seven',
+  'eight',
+  'nine',
+  'ten',
+  'eleven',
+  'twelve',
+  'thirteen',
+  'fourteen',
+];

@@ -41,6 +41,7 @@ export const MotionTitle = styled(motion.p)<{ color: string }>`
   font-family: ${FONTS.PRIMARY};
   font-size: 2rem;
   color: ${(props) => props.color};
+  text-shadow: 1px 1px 2px black;
 `;
 
 export const MotionDescriptionBlock = styled(motion.div)`
@@ -53,7 +54,7 @@ export const MotionDescriptionBlock = styled(motion.div)`
 export const DescriptionText = styled.p`
   margin-top: 0;
   font-family: ${FONTS.PRIMARY};
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: white;
 `;
 
