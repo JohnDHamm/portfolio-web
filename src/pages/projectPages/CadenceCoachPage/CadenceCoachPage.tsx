@@ -11,9 +11,9 @@ import CClogo from '../../../data/projects/cadenceCoach/cadenceCoach_logo.png';
 import { TECH_ICONS } from '../../../assets/images/tech_icons';
 import { COLORS } from '../../../styles';
 import {
-  DidDoDoneMobileCaptions,
-  DidDoDoneMobileScreenshots,
-} from '../../../data/projects/diddodone/mobile_slideshow';
+  CadenceCoachMobileCaptions,
+  CadenceCoachMobileScreenshots,
+} from '../../../data/projects/cadenceCoach/mobile_slideshow';
 import { CadenceCoach_Project } from '../../../data/projects';
 
 const { colors } = CadenceCoach_Project;
@@ -27,17 +27,13 @@ export const CadenceCoachPage: React.FC = () => {
     >
       <ContentWithMargins top="2rem" bottom="4rem">
         <MobileSlideshow
-          images={DidDoDoneMobileScreenshots}
-          captions={DidDoDoneMobileCaptions}
+          images={CadenceCoachMobileScreenshots}
+          captions={CadenceCoachMobileCaptions}
         />
       </ContentWithMargins>
       <TechSectionPresenter
         color={COLORS.WHITE}
-        techIcons={[
-          TECH_ICONS.REACT_NATIVE,
-          TECH_ICONS.LOTTIE,
-          TECH_ICONS.ADOBE_XD,
-        ]}
+        techIcons={[TECH_ICONS.REACT_NATIVE, TECH_ICONS.REDUX]}
         githubURL="https://github.com/JohnDHamm/cadence-react_native"
       />
       <AppStoreButton url="https://apps.apple.com/us/app/cadence-coach/id1262128524" />

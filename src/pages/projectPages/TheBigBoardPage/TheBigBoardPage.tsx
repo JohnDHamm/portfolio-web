@@ -48,8 +48,10 @@ export const TheBigBoardPage: React.FC = () => {
       <TechSectionPresenter
         color={COLORS.WHITE}
         techIcons={[
-          TECH_ICONS.REACT_NATIVE,
-          TECH_ICONS.LOTTIE,
+          TECH_ICONS.REACT,
+          TECH_ICONS.NODE_EXPRESS,
+          TECH_ICONS.MONGO_DB,
+          TECH_ICONS.SOCKET_IO,
           TECH_ICONS.ADOBE_XD,
         ]}
         githubURL="https://github.com/JohnDHamm/the-big-board-app"

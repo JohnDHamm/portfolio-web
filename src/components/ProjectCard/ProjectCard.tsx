@@ -6,7 +6,6 @@ import {
   MotionButtonBlock,
   MotionWrapper,
   MotionScreencapsImage,
-  MotionTechImage,
   MotionDescriptionBlock,
   MotionTitle,
   DescriptionText,
@@ -65,15 +64,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   onMoreClick,
   project,
 }) => {
-  const {
-    cardImage,
-    colors,
-    description,
-    id,
-    screencaps,
-    techIcons,
-    title,
-  } = project;
+  const { cardImage, colors, description, id, screencaps, title } = project;
 
   const { primary, secondary = 'white' } = colors;
 
@@ -136,17 +127,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             }}
             transition={PROJECT_CARD_TRANSITION}
           ></MotionScreencapsImage>
-        )}
-        {techIcons && (
-          <MotionTechImage
-            src={techIcons}
-            initial={false}
-            animate={{
-              opacity: isSelected ? 1 : 0,
-              skewX: 15,
-              x: isSelected ? 0 : 100,
-            }}
-          ></MotionTechImage>
         )}
         <MotionButtonBlock
           initial={false}

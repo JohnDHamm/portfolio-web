@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { FONTS } from '../../styles';
+import { COLORS, FONTS } from '../../styles';
 
 export const MotionWrapper = styled(motion.div)`
   display: flex;
@@ -66,14 +66,6 @@ export const MotionScreencapsImage = styled(motion.img)`
   width: 600px;
 `;
 
-export const MotionTechImage = styled(motion.img)`
-  position: absolute;
-  bottom: 55px;
-  right: 25px;
-  height: 80px;
-  width: 80px;
-`;
-
 export const MotionButtonBlock = styled(motion.div)`
   position: absolute;
   bottom: 10px;
@@ -82,13 +74,16 @@ export const MotionButtonBlock = styled(motion.div)`
 
 export const MoreButton = styled.button<{ color: string }>`
   border: none;
-  background-color: white;
+  background-color: ${COLORS.WHITE};
   color: ${(props) => props.color};
   font-family: ${FONTS.PRIMARY};
   font-size: 1.25rem;
+  border: 1px solid ${COLORS.BLACK};
 
   &:hover {
-    border: 2px solid black;
+    background-color: ${COLORS.BLACK};
+    color: ${COLORS.WHITE};
+    border: 1px solid ${COLORS.WHITE};
     cursor: pointer;
   }
 `;

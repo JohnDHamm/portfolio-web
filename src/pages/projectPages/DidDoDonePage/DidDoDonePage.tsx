@@ -35,6 +35,7 @@ export const DidDoDonePage: React.FC = () => {
         color={COLORS.WHITE}
         techIcons={[
           TECH_ICONS.REACT_NATIVE,
+          TECH_ICONS.EXPO,
           TECH_ICONS.LOTTIE,
           TECH_ICONS.ADOBE_XD,
         ]}

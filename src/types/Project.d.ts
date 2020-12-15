@@ -9,5 +9,4 @@ interface Project {
   cardImage?: any;
   mobileCardImage?: any;
   screencaps?: any;
-  techIcons?: any;
 }
