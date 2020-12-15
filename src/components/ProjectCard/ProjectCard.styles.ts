@@ -66,14 +66,6 @@ export const MotionScreencapsImage = styled(motion.img)`
   width: 600px;
 `;
 
-export const MotionTechImage = styled(motion.img)`
-  position: absolute;
-  bottom: 55px;
-  right: 25px;
-  height: 80px;
-  width: 80px;
-`;
-
 export const MotionButtonBlock = styled(motion.div)`
   position: absolute;
   bottom: 10px;

@@ -24,7 +24,6 @@ export const MOCK_PROJECT_2: Project = {
   ],
   cardImage: require('./images/mockproject2.png'),
   screencaps: require('./images/mockproject2_screencaps.png'),
-  techIcons: require('./images/mockproject2_tech.png'),
 };
 
 export const MOCK_PROJECT_3: Project = {
