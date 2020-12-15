@@ -45,18 +45,14 @@ export const NogPage: React.FC = () => {
           captions={DidDoDoneMobileCaptions}
         />
       </ContentWithMargins>
-      <ContentWithMargins top="2rem" bottom="4rem">
-        <VideoPlayer
-          url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
-          caption="Here's some caption for the video."
-        />
-      </ContentWithMargins>
       <TechSectionPresenter
         color={COLORS.WHITE}
         techIcons={[
+          TECH_ICONS.REACT,
+          TECH_ICONS.NODE_EXPRESS,
           TECH_ICONS.REACT_NATIVE,
+          TECH_ICONS.EXPO,
           TECH_ICONS.LOTTIE,
-          TECH_ICONS.ADOBE_XD,
         ]}
         githubURL="https://github.com/JohnDHamm/nog-react"
       />
@@ -70,6 +66,17 @@ export const NogPage: React.FC = () => {
           <Button>TRY THE DEMO</Button>
         </a>
       </ContentWithMargins>
+      <ContentWithMargins top="2rem" bottom="4rem">
+        <VideoPlayer
+          url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
+          caption="Here's some caption for the video."
+        />
+      </ContentWithMargins>
+      <TechSectionPresenter
+        color={COLORS.WHITE}
+        techIcons={[TECH_ICONS.ARDUINO, TECH_ICONS.MIT_APP_INVENTOR]}
+        githubURL="https://github.com/JohnDHamm/nog-arduino"
+      />
     </ProjectPageTemplate>
   );
 };

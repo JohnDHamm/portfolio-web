@@ -34,7 +34,7 @@ export const TeamTimerPage: React.FC = () => {
         color={COLORS.WHITE}
         techIcons={[
           TECH_ICONS.REACT_NATIVE,
-          TECH_ICONS.LOTTIE,
+          TECH_ICONS.EXPO,
           TECH_ICONS.ADOBE_XD,
         ]}
         githubURL="https://github.com/JohnDHamm/team-timer-pro"
