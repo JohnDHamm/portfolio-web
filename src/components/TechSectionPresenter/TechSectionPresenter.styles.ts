@@ -50,11 +50,31 @@ export const ContentBlock = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 0.25rem;
+  transform: skewX(-15deg);
+  background-color: rgba(0, 0, 0, 0.4);
 
   @media screen and (${CONSTANTS.SCREEN.TABLET}) {
     height: auto;
     width: 100%;
     flex-direction: column;
+    transform: skewX(0deg);
+    margin: 0.25rem 0;
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: skewX(15deg);
+  padding-right: 0.5rem;
+
+  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    transform: skewX(0deg);
     margin: 0.25rem 0;
   }
 `;

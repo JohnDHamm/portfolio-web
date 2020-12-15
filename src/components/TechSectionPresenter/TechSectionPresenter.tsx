@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Content,
   ContentBlock,
   IconsBlock,
   Icon,
@@ -58,17 +59,19 @@ export const TechSectionPresenter: React.FC<TechSectionPresenterProps> = ({
             <ThinSlash color={color} />
           </LegendBlock>
           <ContentBlock>
-            {techIcons.length > 0 && <IconsBlock>{renderIcons()}</IconsBlock>}
-            {githubURL && (
-              <a
-                href={githubURL}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: 'none' }}
-              >
-                <GitHubButton />
-              </a>
-            )}
+            <Content>
+              {techIcons.length > 0 && <IconsBlock>{renderIcons()}</IconsBlock>}
+              {githubURL && (
+                <a
+                  href={githubURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <GitHubButton />
+                </a>
+              )}
+            </Content>
           </ContentBlock>
           <ThinSlash color={color} />
         </div>
@@ -87,17 +90,21 @@ export const TechSectionPresenter: React.FC<TechSectionPresenterProps> = ({
             <MobileThickSlash color={color} />
             <MobileThinSlash color={color} />
             <ContentBlock>
-              {techIcons.length > 0 && <IconsBlock>{renderIcons()}</IconsBlock>}
-              {githubURL && (
-                <a
-                  href={githubURL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <GitHubButton />
-                </a>
-              )}
+              <Content>
+                {techIcons.length > 0 && (
+                  <IconsBlock>{renderIcons()}</IconsBlock>
+                )}
+                {githubURL && (
+                  <a
+                    href={githubURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <GitHubButton />
+                  </a>
+                )}
+              </Content>
             </ContentBlock>
             <MobileThinSlash color={color} />
           </MobileContainer>
