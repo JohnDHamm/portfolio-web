@@ -26,7 +26,6 @@ export const DidDoDone_Project: Project = {
   cardImage: require('./diddodone/diddodone_card.png'),
   mobileCardImage: require('./diddodone/diddodone_mobileCard.png'),
   screencaps: require('./diddodone/diddodone_screencaps.png'),
-  // techIcons: require('./diddodone/diddodone_tech.png'),
 };
 
 export const CadenceCoach_Project: Project = {
@@ -41,6 +40,7 @@ export const CadenceCoach_Project: Project = {
   ],
   cardImage: require('./cadenceCoach/cadenceCoach_card.png'),
   mobileCardImage: require('./cadenceCoach/cadenceCoach_mobileCard.png'),
+  screencaps: require('./cadenceCoach/cadenceCoach_screencaps.png'),
 };
 
 export const Nog_Project: Project = {
@@ -61,7 +61,6 @@ export const TheBigBoard_Project: Project = {
   id: 'thebigboard',
   title: 'The Big Board',
   colors: {
-    // primary: '#8bc53f',
     primary: '#79ac37',
   },
   description: [
