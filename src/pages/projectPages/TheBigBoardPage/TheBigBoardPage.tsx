@@ -11,14 +11,14 @@ import BBlogo from '../../../data/projects/thebigboard/thebigboard_logo.png';
 import { TECH_ICONS } from '../../../assets/images/tech_icons';
 import { COLORS } from '../../../styles';
 import {
-  DidDoDoneMobileCaptions,
-  DidDoDoneMobileScreenshots,
-} from '../../../data/projects/diddodone/mobile_slideshow';
+  BigBoardDesktopCaptions,
+  BigBoardDesktopScreenshots,
+} from '../../../data/projects/thebigboard/desktop_slideshow';
+import {
+  BigBoardMobileCaptions,
+  BigBoardMobileScreenshots,
+} from '../../../data/projects/thebigboard/mobile_slideshow';
 import { TheBigBoard_Project } from '../../../data/projects';
-
-const DESKTOP_TEST01 = require('../../../mocks/desktop_screenshots_slideshow_test01.png');
-const DESKTOP_TEST02 = require('../../../mocks/desktop_screenshots_slideshow_test02.png');
-const DESKTOP_TEST03 = require('../../../mocks/desktop_screenshots_slideshow_test03.png');
 
 const { colors } = TheBigBoard_Project;
 
@@ -31,18 +31,14 @@ export const TheBigBoardPage: React.FC = () => {
     >
       <ContentWithMargins top="2rem" bottom="4rem">
         <DesktopSlideshow
-          images={[DESKTOP_TEST01, DESKTOP_TEST02, DESKTOP_TEST03]}
-          captions={[
-            'This is the caption for image 1.',
-            'Another caption.',
-            "This is the caption for image 3. Let's make it a longer caption to test how it looks wrapping.",
-          ]}
+          images={BigBoardDesktopScreenshots}
+          captions={BigBoardDesktopCaptions}
         />
       </ContentWithMargins>
       <ContentWithMargins top="2rem" bottom="4rem">
         <MobileSlideshow
-          images={DidDoDoneMobileScreenshots}
-          captions={DidDoDoneMobileCaptions}
+          images={BigBoardMobileScreenshots}
+          captions={BigBoardMobileCaptions}
         />
       </ContentWithMargins>
       <TechSectionPresenter
