@@ -69,6 +69,7 @@ export const TheBigBoard_Project: Project = {
   ],
   cardImage: require('./thebigboard/thebigboard_card.png'),
   mobileCardImage: require('./thebigboard/thebigboard_mobileCard.png'),
+  screencaps: require('./thebigboard/thebigboard_screencaps.png'),
 };
 
 export const projectsData: Project[] = [
