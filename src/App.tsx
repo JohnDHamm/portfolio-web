@@ -3,9 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {
   CadenceCoachPage,
   DidDoDonePage,
+  DidDoDonePrivacy,
   HomePage,
   NogPage,
   TeamTimerPage,
+  TeamTimerBasicPrivacy,
+  TeamTimerProPrivacy,
   TheBigBoardPage,
 } from './pages';
 import { ViewportProvider } from './contexts';
@@ -29,6 +32,15 @@ function App() {
           </Route>
           <Route path="/projects/thebigboard">
             <TheBigBoardPage />
+          </Route>
+          <Route path="/projects/did-do-done-privacy">
+            <DidDoDonePrivacy />
+          </Route>
+          <Route path="/projects/team-timer-basic-privacy">
+            <TeamTimerBasicPrivacy />
+          </Route>
+          <Route path="/projects/team-timer-pro-privacy">
+            <TeamTimerProPrivacy />
           </Route>
           <Route exact path="/">
             <HomePage />
