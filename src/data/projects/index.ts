@@ -6,7 +6,7 @@ export const TeamTimer_Project: Project = {
   },
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
-    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place? I better knock, I suppose. There doesn't seem to be anyone there. Let's go back and tell Master Luke.`,
+    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place?`,
   ],
   cardImage: require('./teamtimer/teamTimer_card.png'),
   mobileCardImage: require('./teamtimer/teamTimer_mobileCard.png'),
@@ -36,7 +36,7 @@ export const CadenceCoach_Project: Project = {
   },
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
-    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place? I better knock, I suppose. There doesn't seem to be anyone there. Let's go back and tell Master Luke.`,
+    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place?`,
   ],
   cardImage: require('./cadenceCoach/cadenceCoach_card.png'),
   mobileCardImage: require('./cadenceCoach/cadenceCoach_mobileCard.png'),
@@ -51,7 +51,7 @@ export const Nog_Project: Project = {
   },
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
-    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place? I better knock, I suppose. There doesn't seem to be anyone there. Let's go back and tell Master Luke.`,
+    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit.`,
   ],
   cardImage: require('./nog/nog_card.png'),
   mobileCardImage: require('./nog/nog_mobileCard.png'),
@@ -65,10 +65,11 @@ export const TheBigBoard_Project: Project = {
   },
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
-    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place? I better knock, I suppose. There doesn't seem to be anyone there. Let's go back and tell Master Luke.`,
+    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit.`,
   ],
   cardImage: require('./thebigboard/thebigboard_card.png'),
   mobileCardImage: require('./thebigboard/thebigboard_mobileCard.png'),
+  screencaps: require('./thebigboard/thebigboard_screencaps.png'),
 };
 
 export const projectsData: Project[] = [
@@ -78,3 +79,8 @@ export const projectsData: Project[] = [
   Nog_Project,
   CadenceCoach_Project,
 ];
+
+export const BIGBOARD_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/thebigboard`;
+export const CADENCECOACH_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/cadencecoach`;
+export const DIDDODONE_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/diddodone`;
+export const TEAMTIMER_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/teamtimer`;

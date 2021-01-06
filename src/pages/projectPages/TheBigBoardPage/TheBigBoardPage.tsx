@@ -13,11 +13,9 @@ import { COLORS } from '../../../styles';
 import {
   BigBoardDesktopCaptions,
   BigBoardDesktopScreenshots,
-} from '../../../data/projects/thebigboard/desktop_slideshow';
-import {
   BigBoardMobileCaptions,
   BigBoardMobileScreenshots,
-} from '../../../data/projects/thebigboard/mobile_slideshow';
+} from '../../../data/projects/thebigboard';
 import { TheBigBoard_Project } from '../../../data/projects';
 
 const { colors } = TheBigBoard_Project;

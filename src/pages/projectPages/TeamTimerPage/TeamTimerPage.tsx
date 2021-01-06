@@ -12,7 +12,7 @@ import { COLORS } from '../../../styles';
 import {
   TeamTimerMobileCaptions,
   TeamTimerMobileScreenshots,
-} from '../../../data/projects/teamtimer/mobile_slideshow';
+} from '../../../data/projects/teamtimer';
 import { TeamTimer_Project } from '../../../data/projects';
 
 const { colors } = TeamTimer_Project;
