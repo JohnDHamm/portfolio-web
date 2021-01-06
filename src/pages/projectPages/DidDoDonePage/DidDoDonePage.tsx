@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   AppStoreButton,
-  DesktopSlideshow,
   MobileSlideshow,
   ProjectPageTemplate,
   TechSectionPresenter,

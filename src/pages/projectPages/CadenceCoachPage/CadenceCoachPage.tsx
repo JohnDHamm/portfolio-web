@@ -33,7 +33,7 @@ export const CadenceCoachPage: React.FC = () => {
       </ContentWithMargins>
       <TechSectionPresenter
         color={COLORS.WHITE}
-        techIcons={[TECH_ICONS.REACT_NATIVE, TECH_ICONS.REDUX]}
+        techIcons={[TECH_ICONS.REACT_NATIVE, TECH_ICONS.REDUX, TECH_ICONS.EXPO]}
         githubURL="https://github.com/JohnDHamm/cadence-react_native"
       />
       <AppStoreButton url="https://apps.apple.com/us/app/cadence-coach/id1262128524" />
