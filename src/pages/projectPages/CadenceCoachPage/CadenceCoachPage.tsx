@@ -13,7 +13,7 @@ import { COLORS } from '../../../styles';
 import {
   CadenceCoachMobileCaptions,
   CadenceCoachMobileScreenshots,
-} from '../../../data/projects/cadenceCoach/mobile_slideshow';
+} from '../../../data/projects/cadenceCoach';
 import { CadenceCoach_Project } from '../../../data/projects';
 
 const { colors } = CadenceCoach_Project;

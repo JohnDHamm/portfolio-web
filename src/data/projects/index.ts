@@ -81,3 +81,4 @@ export const projectsData: Project[] = [
 ];
 
 export const BIGBOARD_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/thebigboard`;
+export const CADENCECOACH_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/cadencecoach`;
