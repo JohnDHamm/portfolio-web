@@ -13,7 +13,7 @@ import { COLORS } from '../../../styles';
 import {
   DidDoDoneMobileCaptions,
   DidDoDoneMobileScreenshots,
-} from '../../../data/projects/diddodone/mobile_slideshow';
+} from '../../../data/projects/diddodone';
 
 const { colors } = DidDoDone_Project;
 

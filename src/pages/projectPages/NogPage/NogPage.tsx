@@ -14,7 +14,7 @@ import { COLORS } from '../../../styles';
 import {
   DidDoDoneMobileCaptions,
   DidDoDoneMobileScreenshots,
-} from '../../../data/projects/diddodone/mobile_slideshow';
+} from '../../../data/projects/diddodone';
 import { Nog_Project } from '../../../data/projects';
 const DESKTOP_TEST01 = require('../../../mocks/desktop_screenshots_slideshow_test01.png');
 const DESKTOP_TEST02 = require('../../../mocks/desktop_screenshots_slideshow_test02.png');
