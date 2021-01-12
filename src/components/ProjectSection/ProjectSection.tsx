@@ -59,7 +59,7 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({
             animate={{ x: leftPosition }}
             transition={PROJECT_CARD_TRANSITION}
           >
-            <SectionPresenter legend="PROJECTS" color="#CCC">
+            <SectionPresenter legend="PROJECTS" color="#aaa">
               <StyledUL>
                 {projects.map((project) => (
                   <StyledLI key={project.id}>

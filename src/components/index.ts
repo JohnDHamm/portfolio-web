@@ -12,6 +12,7 @@ import { ProjectPageTemplate } from './ProjectPageTemplate/ProjectPageTemplate';
 import { ProjectSection } from './ProjectSection/ProjectSection';
 import { SectionPresenter } from './SectionPresenter/SectionPresenter';
 import { SlideshowNavButton } from './SlideshowNavButton/SlideshowNavButton';
+import { SmallSectionPresenter } from './SmallSectionPresenter/SmallSectionPresenter';
 import { TechSectionPresenter } from './TechSectionPresenter/TechSectionPresenter';
 import { VideoPlayer } from './VideoPlayer/VideoPlayer';
 
@@ -30,6 +31,7 @@ export {
   ProjectSection,
   SectionPresenter,
   SlideshowNavButton,
+  SmallSectionPresenter,
   TechSectionPresenter,
   VideoPlayer,
 };
