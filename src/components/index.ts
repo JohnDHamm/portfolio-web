@@ -10,6 +10,7 @@ import { MobileSlideshow } from './MobileSlideshow/MobileSlideshow';
 import { ProjectCard } from './ProjectCard/ProjectCard';
 import { ProjectPageTemplate } from './ProjectPageTemplate/ProjectPageTemplate';
 import { ProjectSection } from './ProjectSection/ProjectSection';
+import { ScrollToTop } from './ScrollToTop/ScrollToTop';
 import { SectionPresenter } from './SectionPresenter/SectionPresenter';
 import { SlideshowNavButton } from './SlideshowNavButton/SlideshowNavButton';
 import { SmallSectionPresenter } from './SmallSectionPresenter/SmallSectionPresenter';
@@ -29,6 +30,7 @@ export {
   ProjectCard,
   ProjectPageTemplate,
   ProjectSection,
+  ScrollToTop,
   SectionPresenter,
   SlideshowNavButton,
   SmallSectionPresenter,
