@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  AnimatedPageTransition,
-  // TechSectionPresenter,
-} from '../../components';
+import { AnimatedPageTransition, ScrollToTop } from '../../components';
 import {
   CenteredContent,
   ContentWithMargins,
@@ -30,6 +27,7 @@ export const ProjectPageTemplate: React.FC<ProjectPageTemplateProps> = ({
 }) => {
   return (
     <StyledPageWrapper bgColor={projectColor}>
+      <ScrollToTop />
       <AnimatedPageTransition
         isVisible={true}
         type="end"
@@ -43,18 +41,7 @@ export const ProjectPageTemplate: React.FC<ProjectPageTemplateProps> = ({
         <StyledTextBlock>
           <p>{mainText}</p>
         </StyledTextBlock>
-
-        {/* <TechSectionPresenter
-          color={COLORS.WHITE}
-          techIcons={[
-            TECH_ICONS.REACT_NATIVE,
-            TECH_ICONS.LOTTIE,
-            TECH_ICONS.ADOBE_XD,
-          ]}
-          githubURL="https://github.com/JohnDHamm/did-do-done-RN-app"
-        /> */}
         {children}
-
         <ContentWithMargins top="3rem" bottom="0rem">
           <HomeLink href="/">&lt; home</HomeLink>
         </ContentWithMargins>
