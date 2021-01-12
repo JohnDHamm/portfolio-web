@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageTransition } from '../PageTransition/PageTransition';
 import { MotionContainer } from './AnimatedPageTransition.styles';
-import { useViewport } from '../../hooks';
+import { useScroll, useViewport } from '../../hooks';
 
 export interface PageTranstionStartProps {
   isVisible: boolean;
@@ -14,6 +14,7 @@ export const AnimatedPageTransition: React.FC<PageTranstionStartProps> = ({
   color = 'black',
   type,
 }) => {
+  const { y } = useScroll();
   const { width, height } = useViewport();
   const skewedOffset = height * 0.267949192431123; // tan(15 deg)
 
@@ -46,6 +47,7 @@ export const AnimatedPageTransition: React.FC<PageTranstionStartProps> = ({
           initial={initial}
           animate={animate}
           transition={{ duration: 0.5 }}
+          top={y}
         >
           <PageTransition color={color} />
         </MotionContainer>
