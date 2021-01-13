@@ -87,12 +87,12 @@ export const ContactItem = styled.div`
 `;
 
 export const ContactItemImage = styled.img`
-  width: 50px;
+  width: 40px;
 `;
 
 export const ContactItemText = styled.p`
   margin: 0;
   font-family: ${FONTS.PRIMARY};
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
 `;
