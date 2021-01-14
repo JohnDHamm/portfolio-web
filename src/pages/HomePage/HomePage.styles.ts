@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FONTS } from '../../styles';
 
 export const TopBar = styled.div`
@@ -37,16 +37,78 @@ export const ContentText = styled.p`
   padding-bottom: 0.5rem;
 `;
 
-export const AboutTechContainer = styled.div`
-  display: flex;
-  margin-top: 1rem;
+export const AboutTechWrapper = styled.div`
+  position: relative;
+  width: 100%;
 `;
 
-export const AboutTechIcon = styled.div`
+const techAnimOne = keyframes`
+  0% { opacity: 0; }
+  1% { opacity: 1; }
+  24% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+`;
+
+const techAnimTwo = keyframes`
+  0% { opacity: 0; }
+  25% { opacity: 0; }
+  26% { opacity: 1; }
+  49% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+`;
+
+const techAnimThree = keyframes`
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  51% { opacity: 1; }
+  74% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+`;
+
+const techAnimFour = keyframes`
+  0% { opacity: 0; }
+  75% { opacity: 0; }
+  76% { opacity: 1; }
+  99% { opacity: 1; }
+  100% { opacity: 0; }
+`;
+
+const AboutTechContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 100%;
   height: 60px;
-  width: 60px;
-  margin: 0 0.5rem;
-  border: 1px dashed #ccc;
+  display: flex;
+  margin-top: 1rem;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+`;
+
+export const AboutTechContainerOne = styled(AboutTechContainer)`
+  animation-name: ${techAnimOne};
+`;
+
+export const AboutTechContainerTwo = styled(AboutTechContainer)`
+  animation-name: ${techAnimTwo};
+`;
+export const AboutTechContainerThree = styled(AboutTechContainer)`
+  animation-name: ${techAnimThree};
+`;
+export const AboutTechContainerFour = styled(AboutTechContainer)`
+  animation-name: ${techAnimFour};
+`;
+
+export const AboutTechIcon = styled.img`
+  height: 60px;
+  margin-bottom: 0.5rem;
 `;
 
 export const ProjectsContainer = styled.div`
@@ -67,6 +129,7 @@ export const ProcessContainer = styled(SectionContainer)`
 
 export const ContactContainer = styled(SectionContainer)`
   background-color: #000;
+  padding-top: 1.5rem;
 `;
 
 export const ContactContent = styled.div`
@@ -87,12 +150,12 @@ export const ContactItem = styled.div`
 `;
 
 export const ContactItemImage = styled.img`
-  width: 50px;
+  width: 40px;
 `;
 
 export const ContactItemText = styled.p`
   margin: 0;
   font-family: ${FONTS.PRIMARY};
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
 `;

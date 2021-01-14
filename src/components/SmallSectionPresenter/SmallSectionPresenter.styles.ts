@@ -12,7 +12,7 @@ export const LegendBlock = styled.div`
 export const LegendTextBlock = styled.div`
   position: absolute;
   bottom: 40px;
-  right: -29px;
+  right: -32px;
   width: 120px;
   transform: rotate(-75deg);
   text-align: center;
@@ -27,7 +27,7 @@ export const LegendText = styled.p<{ color: string }>`
 
 export const ThickSlash = styled.div<{ color: string }>`
   height: 120px;
-  width: 10px;
+  width: 8px;
   margin-right: 2px;
   transform: skewX(-15deg);
   background-color: ${(props) => props.color};
@@ -36,7 +36,7 @@ export const ThickSlash = styled.div<{ color: string }>`
 export const ThinSlash = styled.div<{ color: string }>`
   height: 120px;
   width: 2px;
-  margin-left: 2px;
+  margin-left: 1px;
   margin-right: 3px;
   transform: skewX(-15deg);
   background-color: ${(props) => props.color};
