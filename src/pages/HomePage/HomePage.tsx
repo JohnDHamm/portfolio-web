@@ -86,18 +86,18 @@ export const HomePage: React.FC = () => {
         <SectionPresenter legend="ABOUT" color="#EEE">
           <ContentContainer>
             <ContentText>
-              This is something that goes in the about section. Here is where I
-              will blah, blah, blah, blah, blah, blah, blah, blah, blah, blah,
-              blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah,
-              blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah,
-              blah, blah, blah, blah, blah, blah, blah,
+              App production from start to finish for web sites and mobile
+              devices. Design for the user with functionality in mind. Built
+              with latest technology, with stability of code, future changes and
+              feature additions in mind. Interactivity and animation pulled from
+              past experience in animation and media production.
             </ContentText>
             <ContentText>
-              This is something that goes in the about section. Here is where I
-              will blah, blah, blah, blah, blah, blah, blah, blah, blah, blah,
-              blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah,
-              blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah,
-              blah, blah, blah, blah, blah, blah, blah,
+              Take a look at some past projects and the production process below
+              and let me know what you think!
+            </ContentText>
+            <ContentText style={{ fontStyle: 'italic' }}>
+              Some of the technologies I use:
             </ContentText>
             <AboutTechWrapper>
               <AboutTechContainerOne>
