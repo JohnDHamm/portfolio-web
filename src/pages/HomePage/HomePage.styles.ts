@@ -24,9 +24,9 @@ export const AboutContainer = styled(SectionContainer)`
 `;
 
 export const ContentContainer = styled.div`
+  /* border: 1px dotted yellow; */
   max-width: 755px;
-  /* border: 1px solid red; */
-  padding: 1rem 2.5rem;
+  padding: 2rem 2.5rem;
 `;
 
 export const ContentText = styled.p`
@@ -34,7 +34,7 @@ export const ContentText = styled.p`
   font-size: 1.25rem;
   color: #fff;
   margin: 0;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
 `;
 
 export const AboutTechWrapper = styled.div`
@@ -84,7 +84,6 @@ const AboutTechContainer = styled.div`
   height: 60px;
   display: flex;
   margin-top: 1rem;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
