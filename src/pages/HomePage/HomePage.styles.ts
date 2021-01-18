@@ -15,18 +15,27 @@ const SectionContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 1024px) {
-    padding: 0 0.5rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 `;
 
 export const AboutContainer = styled(SectionContainer)`
   background-color: #444;
+  @media screen and (max-width: 1024px) {
+  }
 `;
 
 export const ContentContainer = styled.div`
   /* border: 1px dotted yellow; */
   max-width: 755px;
   padding: 2rem 2.5rem;
+
+  @media screen and (max-width: 1024px) {
+    padding: 1rem 0.5rem;
+  }
 `;
 
 export const ContentText = styled.p`
@@ -40,6 +49,9 @@ export const ContentText = styled.p`
 export const AboutTechWrapper = styled.div`
   position: relative;
   width: 100%;
+  @media screen and (max-width: 1024px) {
+    height: 60px;
+  }
 `;
 
 const techAnimOne = keyframes`
@@ -89,6 +101,11 @@ const AboutTechContainer = styled.div`
   flex-wrap: wrap;
   animation-duration: 24s;
   animation-iteration-count: infinite;
+  @media screen and (max-width: 1024px) {
+    left: 0px;
+    height: 40px;
+    margin-top: 0.5rem;
+  }
 `;
 
 export const AboutTechContainerOne = styled(AboutTechContainer)`
@@ -108,6 +125,10 @@ export const AboutTechContainerFour = styled(AboutTechContainer)`
 export const AboutTechIcon = styled.img`
   height: 60px;
   margin-bottom: 0.5rem;
+
+  @media screen and (max-width: 1024px) {
+    height: 40px;
+  }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -129,6 +150,9 @@ export const ProcessContainer = styled(SectionContainer)`
 export const ContactContainer = styled(SectionContainer)`
   background-color: #000;
   padding-top: 1.5rem;
+  @media screen and (max-width: 1024px) {
+    padding-top: 0.5rem;
+  }
 `;
 
 export const ContactContent = styled.div`
@@ -137,6 +161,9 @@ export const ContactContent = styled.div`
   display: flex;
   justify-content: center;
   align-self: center;
+  @media screen and (max-width: 1024px) {
+    margin: 1rem 0;
+  }
 `;
 
 export const ContactItem = styled.div`
@@ -145,6 +172,9 @@ export const ContactItem = styled.div`
   opacity: 0.4;
   &:hover {
     opacity: 1;
+  }
+  @media screen and (max-width: 1024px) {
+    opacity: 0.75;
   }
 `;
 
