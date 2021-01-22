@@ -19,13 +19,11 @@ const Template: Story<LogoSVGProps> = (args) => (
   </div>
 );
 
-export const Desktop = Template.bind({});
+export const Default = Template.bind({});
 export const CustomColors = Template.bind({});
 CustomColors.args = {
-  stacheColors: {
-    fill: 'black',
-    outline: 'yellow',
-  },
+  stacheFill: 'gray',
+  stacheLine: 'yellow',
   nameColor: 'blue',
   dColor: 'orange',
   codesColor: 'pink',
