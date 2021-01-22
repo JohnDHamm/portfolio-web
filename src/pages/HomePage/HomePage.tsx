@@ -17,9 +17,11 @@ import {
   ProjectsContainer,
   ProcessContainer,
   TopBar,
+  LogoContainer,
 } from './HomePage.styles';
 import {
   AnimatedPageTransition,
+  AnimatedLogo,
   ProjectSection,
   SectionPresenter,
   SmallSectionPresenter,
@@ -81,7 +83,11 @@ export const HomePage: React.FC = () => {
         color={selectedProject ? selectedProject.colors.primary : undefined}
         type="start"
       />
-      <TopBar></TopBar>
+      <TopBar>
+        <LogoContainer>
+          <AnimatedLogo onComplete={() => console.log('logo animation done')} />
+        </LogoContainer>
+      </TopBar>
       <AboutContainer>
         <SectionPresenter legend="ABOUT" color="#EEE">
           <ContentContainer>
