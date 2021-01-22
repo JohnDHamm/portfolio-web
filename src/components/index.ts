@@ -1,3 +1,4 @@
+import { AnimatedLogo } from './AnimatedLogo/AnimatedLogo';
 import { AnimatedPageTransition } from './AnimatedPageTransition/AnimatedPageTransition';
 import { AppStoreButton } from './AppStoreButton/AppStoreButton';
 import { Button } from './Button/Button';
@@ -5,7 +6,7 @@ import { DesktopSlideshow } from './DesktopSlideshow/DesktopSlideshow';
 import { GitHubButton } from './GitHubButton/GitHubButton';
 import { GooglePlayButton } from './GooglePlayButton/GooglePlayButton';
 import { LayoutSwitch } from './LayoutSwitch/LayoutSwitch';
-import { AnimatedLogo } from './AnimatedLogo/AnimatedLogo';
+import { LogoSVG } from './LogoSVG/LogoSVG';
 import { MobileProjectCard } from './MobileProjectCard/MobileProjectCard';
 import { MobileSlideshow } from './MobileSlideshow/MobileSlideshow';
 import { ProjectCard } from './ProjectCard/ProjectCard';
@@ -19,6 +20,7 @@ import { TechSectionPresenter } from './TechSectionPresenter/TechSectionPresente
 import { VideoPlayer } from './VideoPlayer/VideoPlayer';
 
 export {
+  AnimatedLogo,
   AnimatedPageTransition,
   AppStoreButton,
   Button,
@@ -26,7 +28,7 @@ export {
   GitHubButton,
   GooglePlayButton,
   LayoutSwitch,
-  AnimatedLogo,
+  LogoSVG,
   MobileProjectCard,
   MobileSlideshow,
   ProjectCard,
