@@ -5,6 +5,7 @@ import { DesktopSlideshow } from './DesktopSlideshow/DesktopSlideshow';
 import { GitHubButton } from './GitHubButton/GitHubButton';
 import { GooglePlayButton } from './GooglePlayButton/GooglePlayButton';
 import { LayoutSwitch } from './LayoutSwitch/LayoutSwitch';
+import { AnimatedLogo } from './AnimatedLogo/AnimatedLogo';
 import { MobileProjectCard } from './MobileProjectCard/MobileProjectCard';
 import { MobileSlideshow } from './MobileSlideshow/MobileSlideshow';
 import { ProjectCard } from './ProjectCard/ProjectCard';
@@ -25,6 +26,7 @@ export {
   GitHubButton,
   GooglePlayButton,
   LayoutSwitch,
+  AnimatedLogo,
   MobileProjectCard,
   MobileSlideshow,
   ProjectCard,
