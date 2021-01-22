@@ -1,10 +1,32 @@
 import styled, { keyframes } from 'styled-components';
 import { FONTS } from '../../styles';
 
+const logoContainerAnim = keyframes`
+  from { width: 600px }
+  82% { width: 600px }
+  100% { width: 200px }
+`;
+
+const mobileLogoContainerAnim = keyframes`
+  from { width: 90% }
+  82% { width: 90% }
+  100% { width: 65% }
+`;
+
 export const TopBar = styled.div`
+  display: flex;
+  justify-content: center;
   width: 100%;
   background-color: #000;
-  height: 4rem;
+  padding: 0.5rem 0;
+`;
+
+export const LogoContainer = styled.div`
+  animation: ${logoContainerAnim} 5.5s ease-in-out both;
+
+  @media screen and (max-width: 767px) {
+    animation: ${mobileLogoContainerAnim} 5.5s ease-in-out both;
+  }
 `;
 
 const SectionContainer = styled.div`
