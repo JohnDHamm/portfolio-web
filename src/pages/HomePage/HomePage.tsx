@@ -7,6 +7,7 @@ import {
   AboutTechContainerFour,
   AboutTechIcon,
   AboutTechWrapper,
+  AnimLogoContainer,
   ContactContainer,
   ContactContent,
   ContentContainer,
@@ -14,14 +15,15 @@ import {
   ContactItem,
   ContactItemImage,
   ContactItemText,
-  ProjectsContainer,
-  ProcessContainer,
-  TopBar,
   LogoContainer,
+  ProjectsContainer,
+  // ProcessContainer,
+  TopBar,
 } from './HomePage.styles';
 import {
   AnimatedPageTransition,
   AnimatedLogo,
+  LogoSVG,
   ProjectSection,
   SectionPresenter,
   SmallSectionPresenter,
@@ -60,12 +62,17 @@ const {
   TYPESCRIPT,
 } = TECH_ICONS;
 
+const SS_KEY = {
+  NEW_VISIT: 'new_visit',
+};
+
 export const HomePage: React.FC = () => {
   const history = useHistory();
   const [startTransition, setStartTransition] = React.useState<boolean>(false);
   const [selectedProject, setSelectedProject] = React.useState<Project | null>(
     null
   );
+  const [newVisit, setNewVisit] = React.useState<boolean>(true);
 
   const handleMore = (id: string) => {
     const project = getProject(id);
@@ -76,6 +83,16 @@ export const HomePage: React.FC = () => {
     setTimeout(() => history.push(`/projects/${id}`), 600);
   };
 
+  React.useEffect(() => {
+    if (!sessionStorage.getItem(SS_KEY.NEW_VISIT)) {
+      sessionStorage.setItem(SS_KEY.NEW_VISIT, 'false');
+    } else {
+      if (sessionStorage.getItem(SS_KEY.NEW_VISIT) === 'false') {
+        setNewVisit(false);
+      }
+    }
+  }, []);
+
   return (
     <div style={{ position: 'relative' }}>
       <AnimatedPageTransition
@@ -84,9 +101,17 @@ export const HomePage: React.FC = () => {
         type="start"
       />
       <TopBar>
-        <LogoContainer>
-          <AnimatedLogo onComplete={() => console.log('logo animation done')} />
-        </LogoContainer>
+        {newVisit ? (
+          <AnimLogoContainer>
+            <AnimatedLogo
+              onComplete={() => console.log('logo animation done')}
+            />
+          </AnimLogoContainer>
+        ) : (
+          <LogoContainer onClick={() => setNewVisit(true)}>
+            <LogoSVG />
+          </LogoContainer>
+        )}
       </TopBar>
       <AboutContainer>
         <SectionPresenter legend="ABOUT" color="#EEE">
@@ -148,7 +173,7 @@ export const HomePage: React.FC = () => {
       <ProjectsContainer>
         <ProjectSection projects={projectsData} onSeeMore={handleMore} />
       </ProjectsContainer>
-      <ProcessContainer>
+      {/* <ProcessContainer>
         <SectionPresenter legend="PROCESS" color="#EEE">
           <ContentContainer>
             <ContentText>
@@ -160,7 +185,7 @@ export const HomePage: React.FC = () => {
             </ContentText>
           </ContentContainer>
         </SectionPresenter>
-      </ProcessContainer>
+      </ProcessContainer> */}
       <ContactContainer>
         <SmallSectionPresenter legend="CONTACT" color="#EEE">
           <ContactContent>

@@ -21,11 +21,20 @@ export const TopBar = styled.div`
   padding: 0.5rem 0;
 `;
 
-export const LogoContainer = styled.div`
+export const AnimLogoContainer = styled.div`
   animation: ${logoContainerAnim} 5.5s ease-in-out both;
 
   @media screen and (max-width: 767px) {
     animation: ${mobileLogoContainerAnim} 5.5s ease-in-out both;
+  }
+`;
+
+export const LogoContainer = styled.div`
+  width: 200px;
+  padding: 0.5rem 0;
+
+  @media screen and (max-width: 767px) {
+    width: 65%;
   }
 `;
 
@@ -45,13 +54,12 @@ const SectionContainer = styled.div`
 `;
 
 export const AboutContainer = styled(SectionContainer)`
-  background-color: #444;
+  background-color: #222;
   @media screen and (max-width: 1024px) {
   }
 `;
 
 export const ContentContainer = styled.div`
-  /* border: 1px dotted yellow; */
   max-width: 755px;
   padding: 2rem 2.5rem;
 
