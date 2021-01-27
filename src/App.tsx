@@ -6,6 +6,7 @@ import {
   DidDoDonePrivacy,
   HomePage,
   NogPage,
+  NoRoutePage,
   TeamTimerPage,
   TeamTimerBasicPrivacy,
   TeamTimerProPrivacy,
@@ -47,7 +48,7 @@ function App() {
               <HomePage />
             </Route>
             <Route path="*">
-              <div>404 no page</div>
+              <NoRoutePage />
             </Route>
           </Switch>
         </Router>
