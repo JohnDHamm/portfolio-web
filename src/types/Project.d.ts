@@ -10,3 +10,8 @@ interface Project {
   mobileCardImage?: any;
   screencaps?: any;
 }
+
+interface ProjectTitle {
+  color: string;
+  text: string;
+}
