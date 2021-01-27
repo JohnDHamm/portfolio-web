@@ -33,6 +33,7 @@ export const CadenceCoach_Project: Project = {
   title: 'Cadence Coach',
   colors: {
     primary: '#818bb3',
+    secondary: '#5b1514',
   },
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
