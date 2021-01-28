@@ -117,11 +117,11 @@ export const HomePage: React.FC = () => {
         <SectionPresenter legend="ABOUT" color="#EEE">
           <ContentContainer>
             <ContentText>
-              App production from start to finish for web sites and mobile
-              devices. Design for the user with functionality in mind. Built
-              with latest technology, with stability of code, future changes and
-              feature additions in mind. Interactivity and animation pulled from
-              past experience in animation and media production.
+              Web and mobile app production from start to finish. Designed for
+              functionality, with user experience at the forefront. Built using
+              the latest technologies, with stability of code, future changes,
+              and feature additions in mind. Interactivity and animation pulled
+              from vast prior experience in animation and media production.
             </ContentText>
             <ContentText>
               Take a look at some past projects and the production process below

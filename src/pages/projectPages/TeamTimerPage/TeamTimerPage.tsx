@@ -18,7 +18,7 @@ import { TeamTimer_Project } from '../../../data/projects';
 const { colors } = TeamTimer_Project;
 
 const title: ProjectTitle = {
-  color: '#6f5fa9',
+  color: colors.secondary || 'white',
   text: 'Multi-athlete lap timer',
 };
 

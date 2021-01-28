@@ -60,8 +60,8 @@ export const AboutContainer = styled(SectionContainer)`
 `;
 
 export const ContentContainer = styled.div`
-  max-width: 755px;
-  padding: 2rem 2.5rem;
+  max-width: 735px;
+  padding: 2rem 2.5rem 2rem 4rem;
 
   @media screen and (max-width: 1024px) {
     padding: 1rem 0.5rem;
