@@ -26,14 +26,14 @@ export const MotionMainImage = styled(motion.img)`
   width: 510px;
 `;
 
-export const MotionTitle = styled(motion.p)<{ color: string }>`
+export const MotionTitle = styled(motion.p)`
   position: absolute;
   bottom: -10px;
   left: 8px;
   margin: 0;
   font-family: ${FONTS.PRIMARY};
   font-size: 2rem;
-  color: ${(props) => props.color};
+  color: ${COLORS.WHITE};
 `;
 
 export const MotionDescriptionBlock = styled(motion.div)`
@@ -43,11 +43,19 @@ export const MotionDescriptionBlock = styled(motion.div)`
   padding: 0.5rem;
 `;
 
-export const DescriptionText = styled.p`
+const Text = styled.p`
   margin-top: 0;
+  margin-bottom: 0.25rem;
   font-family: ${FONTS.PRIMARY};
+  color: ${COLORS.WHITE};
+`;
+
+export const TitleText = styled(Text)`
+  font-size: 20px;
+`;
+
+export const DescriptionText = styled(Text)`
   font-size: 14px;
-  color: white;
 `;
 
 export const MotionScreencapsImage = styled(motion.img)`
@@ -60,7 +68,7 @@ export const MotionScreencapsImage = styled(motion.img)`
 
 export const MotionButtonBlock = styled(motion.div)`
   position: absolute;
-  bottom: 115px;
+  bottom: 125px;
   right: 15px;
 `;
 

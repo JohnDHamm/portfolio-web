@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Container,
+  DescriptionText,
   MotionMainImage,
   MoreButton,
   MotionButtonBlock,
@@ -8,7 +9,7 @@ import {
   MotionScreencapsImage,
   MotionDescriptionBlock,
   MotionTitle,
-  DescriptionText,
+  TitleText,
 } from './MobileProjectCard.styles';
 import { CONSTANTS } from '../../styles';
 
@@ -64,6 +65,7 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
   project,
 }) => {
   const {
+    bannerText,
     colors,
     description,
     id,
@@ -72,7 +74,7 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
     title,
   } = project;
 
-  const { primary, secondary = 'white' } = colors;
+  const { primary } = colors;
 
   const handleMore = (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
@@ -114,7 +116,6 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
           initial={false}
           transition={PROJECT_CARD_TRANSITION}
           animate={{ y: isSelected ? -290 : 0, skewX: isSelected ? 0 : 15 }}
-          color={secondary}
         >
           {title.toUpperCase()}
         </MotionTitle>
@@ -134,6 +135,7 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
           initial={false}
           animate={{ opacity: isSelected ? 1 : 0 }}
         >
+          <TitleText>{bannerText}</TitleText>
           {renderDescription()}
         </MotionDescriptionBlock>
         <MotionButtonBlock

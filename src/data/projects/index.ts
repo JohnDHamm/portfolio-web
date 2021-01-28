@@ -3,7 +3,9 @@ export const TeamTimer_Project: Project = {
   title: 'Team Timer',
   colors: {
     primary: '#0B163B',
+    secondary: '#6f5fa9',
   },
+  bannerText: 'Multi-athlete lap timer',
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
     `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place?`,
@@ -19,6 +21,7 @@ export const DidDoDone_Project: Project = {
   colors: {
     primary: '#4c408f',
   },
+  bannerText: '',
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave?`,
     `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place?`,
@@ -35,9 +38,9 @@ export const CadenceCoach_Project: Project = {
     primary: '#818bb3',
     secondary: '#5b1514',
   },
+  bannerText: 'Cadence measurement with a tap of the finger',
   description: [
-    `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
-    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place?`,
+    `Created for coaches of triathletes, this mobile app lets a coach easily measure an athlete's cadence during a swim or run workout. Select an athlete from your team list and tap the screen with each swim stroke or run step. Results are updated in real-time.`,
   ],
   cardImage: require('./cadenceCoach/cadenceCoach_card.png'),
   mobileCardImage: require('./cadenceCoach/cadenceCoach_mobileCard.png'),
@@ -50,6 +53,7 @@ export const Nog_Project: Project = {
   colors: {
     primary: '#701626',
   },
+  bannerText: '',
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
     `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit.`,
@@ -64,6 +68,7 @@ export const TheBigBoard_Project: Project = {
   colors: {
     primary: '#79ac37',
   },
+  bannerText: '',
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
     `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit.`,
