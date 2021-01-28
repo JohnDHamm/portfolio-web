@@ -104,7 +104,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           <MotionMainImage
             src={cardImage}
             initial={false}
-            animate={{ opacity: isSelected ? 0.3 : 0.9, skewX: 15, x: -40 }}
+            animate={{ opacity: isSelected ? 0.2 : 0.9, skewX: 15, x: -40 }}
           />
         )}
         <TitleBlock>
