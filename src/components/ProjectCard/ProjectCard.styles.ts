@@ -34,13 +34,13 @@ export const TitleBlock = styled.div`
   transform: rotate(-90deg);
 `;
 
-export const MotionTitle = styled(motion.p)<{ color: string }>`
+export const MotionTitle = styled(motion.p)`
   position: absolute;
   bottom: 0;
   margin: 0;
   font-family: ${FONTS.PRIMARY};
   font-size: 2rem;
-  color: ${(props) => props.color};
+  color: ${COLORS.WHITE};
   text-shadow: 1px 1px 2px black;
 `;
 
@@ -51,11 +51,19 @@ export const MotionDescriptionBlock = styled(motion.div)`
   width: 680px;
 `;
 
-export const DescriptionText = styled.p`
+const Text = styled.p`
   margin-top: 0;
+  margin-bottom: 0.5rem;
   font-family: ${FONTS.PRIMARY};
+  color: ${COLORS.WHITE};
+`;
+
+export const BannerText = styled(Text)`
+  font-size: 1.75rem;
+`;
+
+export const DescriptionText = styled(Text)`
   font-size: 1.25rem;
-  color: white;
 `;
 
 export const MotionScreencapsImage = styled(motion.img)`

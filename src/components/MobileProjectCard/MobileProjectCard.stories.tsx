@@ -30,7 +30,7 @@ Selected.args = {
   isSelected: true,
   onCardClick: (id) => console.log('clicked:', id),
   onMoreClick: (id) => console.log('more:', id),
-  project: MOCK_PROJECT_1,
+  project: MOCK_PROJECT_2,
 };
 
 const TEST_PROJECT3: Project = {
@@ -38,6 +38,7 @@ const TEST_PROJECT3: Project = {
     primary: '#bada55',
     secondary: 'navy',
   },
+  bannerText: 'Some sort of title',
   description: [
     `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
     `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit. Artoo, are you sure this is the right place? I better knock, I suppose. There doesn't seem to be anyone there. Let's go back and tell Master Luke.`,

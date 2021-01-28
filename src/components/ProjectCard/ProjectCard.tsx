@@ -1,14 +1,15 @@
 import React from 'react';
 import {
+  BannerText,
   Container,
-  MotionMainImage,
+  DescriptionText,
   MoreButton,
   MotionButtonBlock,
-  MotionWrapper,
-  MotionScreencapsImage,
   MotionDescriptionBlock,
+  MotionMainImage,
+  MotionScreencapsImage,
   MotionTitle,
-  DescriptionText,
+  MotionWrapper,
   TitleBlock,
 } from './ProjectCard.styles';
 import { CONSTANTS } from '../../styles';
@@ -64,9 +65,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   onMoreClick,
   project,
 }) => {
-  const { cardImage, colors, description, id, screencaps, title } = project;
-
-  const { primary, secondary = 'white' } = colors;
+  const {
+    bannerText,
+    cardImage,
+    colors,
+    description,
+    id,
+    screencaps,
+    title,
+  } = project;
 
   const handleMore = (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
@@ -92,7 +99,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       transition={PROJECT_CARD_TRANSITION}
       onClick={() => onCardClick(id)}
     >
-      <Container bgColor={primary}>
+      <Container bgColor={colors.primary}>
         {cardImage && (
           <MotionMainImage
             src={cardImage}
@@ -105,7 +112,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             initial={false}
             transition={PROJECT_CARD_TRANSITION}
             animate={{ y: isSelected ? -770 : 0, skewX: -15 }}
-            color={secondary}
           >
             {title.toUpperCase()}
           </MotionTitle>
@@ -114,6 +120,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           initial={false}
           animate={{ opacity: isSelected ? 1 : 0, skewX: 15 }}
         >
+          <BannerText>{bannerText}</BannerText>
           {renderDescription()}
         </MotionDescriptionBlock>
         {screencaps && (

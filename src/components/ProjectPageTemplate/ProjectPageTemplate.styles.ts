@@ -39,6 +39,16 @@ export const Logo = styled.img<{ width: number }>`
   }
 `;
 
+export const Title = styled.div<{ color: string }>`
+  color: ${(props) => (props.color ? props.color : COLORS.WHITE)};
+  font-size: 1.75rem;
+  font-family: ${FONTS.PRIMARY};
+
+  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+    font-size: 1.25rem;
+  }
+`;
+
 export const StyledTextBlock = styled.div`
   padding: 0.5rem 0;
   width: 100%;

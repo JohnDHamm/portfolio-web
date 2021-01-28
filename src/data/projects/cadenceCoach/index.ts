@@ -9,8 +9,8 @@ export const CadenceCoachMobileScreenshots: any[] = [
 ];
 
 export const CadenceCoachMobileCaptions: string[] = [
-  'one',
-  'two',
-  'three',
-  'four',
+  'Athlete selected, ready to go!',
+  'Updated cadence results with each tap.',
+  'Easily access the most recent results for each athlete.',
+  'Quick athlete selection for measurement on the fly and easy organization of your team.',
 ];

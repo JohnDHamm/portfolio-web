@@ -7,6 +7,7 @@ import {
   Logo,
   StyledPageWrapper,
   StyledTextBlock,
+  Title,
 } from './ProjectPageTemplate.styles';
 
 export interface ProjectPageTemplateProps {
@@ -16,6 +17,7 @@ export interface ProjectPageTemplateProps {
     alt: string;
     width: number;
   };
+  title?: ProjectTitle;
   mainText: string;
 }
 
@@ -24,6 +26,7 @@ export const ProjectPageTemplate: React.FC<ProjectPageTemplateProps> = ({
   logo,
   children,
   mainText,
+  title,
 }) => {
   return (
     <StyledPageWrapper bgColor={projectColor}>
@@ -38,6 +41,7 @@ export const ProjectPageTemplate: React.FC<ProjectPageTemplateProps> = ({
           <HomeLink href="/">&lt; home</HomeLink>
         </div>
         <Logo src={logo.src} alt={logo.alt} width={logo.width} />
+        {title && <Title color={title.color}>{title.text}</Title>}
         <StyledTextBlock>
           <p>{mainText}</p>
         </StyledTextBlock>
