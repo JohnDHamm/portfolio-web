@@ -17,12 +17,18 @@ import {
 
 const { colors } = DidDoDone_Project;
 
+const title: ProjectTitle = {
+  color: colors.secondary || 'white',
+  text: 'When did I ...? And when do I need to do it again?',
+};
+
 export const DidDoDonePage: React.FC = () => {
   return (
     <ProjectPageTemplate
       projectColor={colors.primary}
       logo={{ src: DDDlogo, alt: 'Did Do Done logo', width: 380 }}
-      mainText="This is where the main text goes about the project"
+      title={title}
+      mainText='Have you ever asked yourself when was the last time I...rotated my tires?...changed the A/C filter?...replaced the smoke alarm batteries? Well, Did? Do! Done. provides a way to log those events and set a date for when you need to do them again. Easily search for a saved event by typing in part of the name (e.g. "filter", "tires", etc.) and use custom tags to organize your events and filter the search results (e.g. all events with "car" tag). Did? Do! Done. makes it easy to see the status of your missed tasks or upcoming events, and plan your day/week/month.'
     >
       <ContentWithMargins top="2rem" bottom="4rem">
         <MobileSlideshow

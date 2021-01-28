@@ -15,14 +15,14 @@ export const DidDoDoneMobileScreenshots: any[] = [
 ];
 
 export const DidDoDoneMobileCaptions: string[] = [
-  'one',
-  'two',
-  'three',
-  'four',
-  'five',
-  'six',
-  'seven',
-  'eight',
-  'nine',
-  'ten',
+  'The home screen offers event search capabilities and an overview of any upcoming recurrences.',
+  'See a list of all logged events.',
+  'The list of recurring events are organized by by how soon they need to be done again.',
+  'You can filter your events by keyword(s) for easier searches.',
+  'Or filter by tags.',
+  'Entering an event is easy and straightforward.',
+  'You can include notes and add a custom category tag.',
+  'Set a recurring timeframe for the event.',
+  'Create your own custom tags for better event organization and search.',
+  'Dark mode supported automatically.',
 ];

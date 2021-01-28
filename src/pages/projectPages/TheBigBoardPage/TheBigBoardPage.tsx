@@ -20,12 +20,18 @@ import { TheBigBoard_Project } from '../../../data/projects';
 
 const { colors } = TheBigBoard_Project;
 
+const title: ProjectTitle = {
+  color: colors.secondary || 'white',
+  text: 'Fantasy football draft party',
+};
+
 export const TheBigBoardPage: React.FC = () => {
   return (
     <ProjectPageTemplate
       projectColor={colors.primary}
       logo={{ src: BBlogo, alt: 'The Big Board logo', width: 400 }}
-      mainText="This is where the main text goes about the project"
+      title={title}
+      mainText="Draft day in fantasy football...the fun...the competition...the embarassing smack talk...that's why we play! And The Big Board web app delivers a draft day experience that rivals the pros!"
     >
       <ContentWithMargins top="2rem" bottom="4rem">
         <DesktopSlideshow

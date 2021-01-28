@@ -17,18 +17,18 @@ export const BigBoardDesktopScreenshots: any[] = [
 ];
 
 export const BigBoardDesktopCaptions: string[] = [
-  'one',
-  'two',
-  'three',
-  'four',
-  'five',
-  'six',
-  'seven',
-  'eight',
-  'nine',
-  'ten',
-  'eleven',
-  'twelve',
+  'The draft is ready and you are on the clock with the first pick!',
+  'Players page - this is where you find your player and make your selection. Each player is shown with their position rank and bye week. To help with your selection process, a list of overall rankings is provided and your team needs is updated with each selection.',
+  'You can see all the players for multiple positions at the same time.',
+  'Choose to list the players alphabetically to find a player more quickly.',
+  'Or list the players by their team.',
+  'Make a pick and confirm!',
+  'Live update of your selection removes the player from consideration by others.',
+  'Live notifications when other league managers make their selections.',
+  'The app automatically keeps you updated as to who has the next pick.',
+  'Hide players from the list who are already selected for less distraction.',
+  'Track the draft round by round to see trends and all selections made.',
+  'Check your team as you draft to see what is needed and avoid similar bye weeks.',
 ];
 
 const MOBILE_URL = `${BIGBOARD_ASSETS_URL}/bigBoard_mobile_slideshow_`;
@@ -42,9 +42,9 @@ export const BigBoardMobileScreenshots: any[] = [
 ];
 
 export const BigBoardMobileCaptions: string[] = [
-  'one',
-  'two',
-  'three',
-  'four',
-  'five',
+  'The Big Board was designed and developed to also be used on mobile devices with any internet browser.',
+  'Players page.',
+  'Selection confirmation.',
+  'Pick notification.',
+  'Your team selections.',
 ];
