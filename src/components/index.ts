@@ -1,4 +1,5 @@
 import { Animated404 } from './Animated404/Animated404';
+import { AnimatedFootball } from './AnimatedFootball/AnimatedFootball';
 import { AnimatedLogo } from './AnimatedLogo/AnimatedLogo';
 import { AnimatedPageTransition } from './AnimatedPageTransition/AnimatedPageTransition';
 import { AppStoreButton } from './AppStoreButton/AppStoreButton';
@@ -22,6 +23,7 @@ import { VideoPlayer } from './VideoPlayer/VideoPlayer';
 
 export {
   Animated404,
+  AnimatedFootball,
   AnimatedLogo,
   AnimatedPageTransition,
   AppStoreButton,
