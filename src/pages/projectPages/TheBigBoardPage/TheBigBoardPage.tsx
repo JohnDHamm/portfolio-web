@@ -1,5 +1,7 @@
 import React from 'react';
+import { ButtonContainer, FootballWrapper } from './TheBigBoardPage.styles';
 import {
+  AnimatedFootball,
   Button,
   DesktopSlideshow,
   MobileSlideshow,
@@ -57,14 +59,19 @@ export const TheBigBoardPage: React.FC = () => {
         githubURL="https://github.com/JohnDHamm/the-big-board-app"
       />
       <ContentWithMargins top="1rem" bottom="1rem">
-        <a
-          href="http://demo.thebigboard.fans"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: 'none' }}
-        >
-          <Button>TRY THE DEMO</Button>
-        </a>
+        <ButtonContainer>
+          <FootballWrapper>
+            <AnimatedFootball />
+          </FootballWrapper>
+          <a
+            href="http://demo.thebigboard.fans"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none' }}
+          >
+            <Button>TRY THE DEMO</Button>
+          </a>
+        </ButtonContainer>
       </ContentWithMargins>
     </ProjectPageTemplate>
   );
