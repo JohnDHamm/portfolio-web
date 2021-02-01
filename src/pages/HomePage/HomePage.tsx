@@ -17,7 +17,7 @@ import {
   ContactItemText,
   LogoContainer,
   ProjectsContainer,
-  // ProcessContainer,
+  ProcessContainer,
   TopBar,
 } from './HomePage.styles';
 import {
@@ -124,8 +124,8 @@ export const HomePage: React.FC = () => {
               from vast prior experience in animation and media production.
             </ContentText>
             <ContentText>
-              Take a look at some past projects and the production process below
-              and let me know what you think!
+              Take a look at some featured projects below and let me know what
+              you think!
             </ContentText>
             <ContentText style={{ fontStyle: 'italic' }}>
               Some of the technologies I use:
@@ -173,19 +173,18 @@ export const HomePage: React.FC = () => {
       <ProjectsContainer>
         <ProjectSection projects={projectsData} onSeeMore={handleMore} />
       </ProjectsContainer>
-      {/* <ProcessContainer>
+      <ProcessContainer>
         <SectionPresenter legend="PROCESS" color="#EEE">
           <ContentContainer>
             <ContentText>
-              This is something that goes in the process section. Here is where
-              I will blah, blah, blah, blah, blah, blah, blah, blah, blah, blah,
-              blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah,
-              blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah,
-              blah, blah, blah, blah, blah, blah, blah,
+              This will be where the process description shit goes...Interactive
+              with images and animation?????...probably will take awhile to
+              complete so I will just remove this section before launching the
+              updated web site.
             </ContentText>
           </ContentContainer>
         </SectionPresenter>
-      </ProcessContainer> */}
+      </ProcessContainer>
       <ContactContainer>
         <SmallSectionPresenter legend="CONTACT" color="#EEE">
           <ContactContent>
