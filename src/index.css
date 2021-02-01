@@ -16,3 +16,8 @@ code {
   font-family: 'PT Sans Narrow';
   src: url(./assets/fonts/PTSansNarrow-Regular.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Condiment';
+  src: url(./assets/fonts/Condiment-Regular.ttf) format('truetype');
+}
