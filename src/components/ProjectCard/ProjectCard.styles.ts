@@ -14,7 +14,7 @@ export const Container = styled.div<{ bgColor: string }>`
   overflow: hidden;
   &:hover {
     cursor: pointer;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
   }
 `;
 
