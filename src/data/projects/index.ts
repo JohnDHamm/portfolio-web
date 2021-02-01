@@ -52,11 +52,12 @@ export const Nog_Project: Project = {
   title: 'Nog',
   colors: {
     primary: '#701626',
+    secondary: '#088a05',
   },
-  bannerText: '',
+  bannerText: 'Programmable lighted ugly XMAS sweater',
   description: [
-    `We're coming! Come on! Come on! Oh, Artoo, hurry! My goodness! Artoo, why did you have to be so brave? Well, I suppose I could hotwire this thing. I'll cover you.`,
-    `Of course I'm worried. And you should be, too. Lando Calrissian and poor Chewbacca never returned from this awful place. Artoo whistles timidly. Don't be so sure. If I told you half the things I've heard about this Jabba the Hutt, you'd probably short-circuit.`,
+    'Lucas ipsum dolor sit amet vader ahsoka mace moff luuke watto jabba sidious jar chewbacca. Fett moff solo kashyyyk moff skywalker. Sebulba mara qui-gonn darth yoda kenobi.',
+    'Skywalker mon ackbar luke darth. Watto darth obi-wan hutt solo obi-wan wedge dooku. Jade fett luke boba solo. Coruscant maul cade dagobah jade kenobi mon darth. Ponda wedge tusken raider moff obi-wan. Calrissian greedo skywalker jade utapau qui-gon.',
   ],
   cardImage: require('./nog/nog_card.png'),
   mobileCardImage: require('./nog/nog_mobileCard.png'),
@@ -91,4 +92,5 @@ export const projectsData: Project[] = [
 export const BIGBOARD_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/thebigboard`;
 export const CADENCECOACH_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/cadencecoach`;
 export const DIDDODONE_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/diddodone`;
+export const NOG_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/nog`;
 export const TEAMTIMER_ASSETS_URL = `${process.env.REACT_APP_ASSETS_URL}/teamtimer`;

@@ -1,61 +1,111 @@
 import React from 'react';
+import { Divider, PhaseText } from './NogPage.styles';
 import {
   Button,
   DesktopSlideshow,
-  MobileSlideshow,
+  // MobileSlideshow,
   ProjectPageTemplate,
   TechSectionPresenter,
   VideoPlayer,
 } from '../../../components';
-import { ContentWithMargins } from '../styles';
+import { ContentWithMargins, TextBlock } from '../styles';
 import NogLogo from '../../../data/projects/nog/nog_logo.png';
 import { TECH_ICONS } from '../../../assets/images/tech_icons';
 import { COLORS } from '../../../styles';
-import {
-  DidDoDoneMobileCaptions,
-  DidDoDoneMobileScreenshots,
-} from '../../../data/projects/diddodone';
+// import {
+//   DidDoDoneMobileCaptions,
+//   DidDoDoneMobileScreenshots,
+// } from '../../../data/projects/diddodone';
 import { Nog_Project } from '../../../data/projects';
-const DESKTOP_TEST01 = require('../../../mocks/desktop_screenshots_slideshow_test01.png');
-const DESKTOP_TEST02 = require('../../../mocks/desktop_screenshots_slideshow_test02.png');
-const DESKTOP_TEST03 = require('../../../mocks/desktop_screenshots_slideshow_test03.png');
+import {
+  NogDesignCaptions,
+  NogDesignImages,
+  NogPrototype2Captions,
+  NogPrototype2Images,
+} from '../../../data/projects/nog';
 
 const { colors } = Nog_Project;
+
+const title: ProjectTitle = {
+  color: colors.secondary || 'white',
+  text: 'Ugly XMAS sweater meets synchronized light display',
+};
 
 export const NogPage: React.FC = () => {
   return (
     <ProjectPageTemplate
       projectColor={colors.primary}
       logo={{ src: NogLogo, alt: 'Nog logo', width: 440 }}
-      mainText="This is where the main text goes about the project"
+      title={title}
+      mainText="Darth kamino r2-d2 wedge k-3po. Yavin ben grievous biggs. Darth leia gamorrean moff hutt ben fett chewbacca darth. Aayla lars moff gamorrean antilles tusken raider. Coruscant moff hutt mace coruscant tatooine moff. Fett ahsoka jinn qui-gon. Bespin alderaan mara hutt mandalore hutt skywalker skywalker jabba. Jade lando solo padmé kit moff. Organa yoda antilles fett padmé moff jinn vader alderaan. Luke darth c-3po luuke padmé. Hutt kessel secura vader jade antilles alderaan. Jinn kamino cade fisto kessel solo fett."
     >
+      <Divider />
+      <PhaseText>phase I</PhaseText>
+      <TextBlock>
+        Bothan binks jade ackbar calamari zabrak dantooine skywalker obi-wan.
+        Moff solo calamari tatooine luuke vader solo ahsoka. Secura bespin leia
+        skywalker yavin kessel darth palpatine solo. Darth han kessel mandalore
+        windu. Fett c-3po moff utapau dantooine. Solo bothan mara luke. Anakin
+        binks kamino antilles. Luuke luke organa vader amidala ahsoka aayla
+        skywalker. Luuke hutt tatooine mon dagobah jinn skywalker.
+      </TextBlock>
+      <VideoPlayer
+        url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
+        caption="Here's some caption for the video."
+      />
+      <ContentWithMargins top="3rem" bottom="2rem">
+        <TechSectionPresenter
+          color={COLORS.WHITE}
+          techIcons={[TECH_ICONS.ARDUINO, TECH_ICONS.MIT_APP_INVENTOR]}
+          githubURL="https://github.com/JohnDHamm/nog-arduino"
+        />
+      </ContentWithMargins>
+      <Divider />
+      <PhaseText>phase II</PhaseText>
+      <TextBlock>
+        Darth lobot c-3po kessel thrawn windu sith sith. Hutt mon mandalore moff
+        obi-wan maul. Amidala greedo watto organa darth darth skywalker.
+        Mustafar skywalker maul tusken raider cade skywalker mace obi-wan darth.
+        Luke wookiee luuke windu kessel. Gonk darth skywalker jango. Organa
+        padmé alderaan ewok darth maul calrissian. Mandalorians fett antilles
+        wicket. Mon yoda grievous chewbacca anakin solo endor. Skywalker mothma
+        c-3po sith anakin moff. Maul darth binks maul.
+      </TextBlock>
       <ContentWithMargins top="2rem" bottom="4rem">
         <DesktopSlideshow
-          images={[DESKTOP_TEST01, DESKTOP_TEST02, DESKTOP_TEST03]}
-          captions={[
-            'This is the caption for image 1.',
-            'Another caption.',
-            "This is the caption for image 3. Let's make it a longer caption to test how it looks wrapping.",
-          ]}
+          images={NogDesignImages}
+          captions={NogDesignCaptions}
         />
       </ContentWithMargins>
-      <ContentWithMargins top="2rem" bottom="4rem">
+      {/* <ContentWithMargins top="2rem" bottom="4rem">
         <MobileSlideshow
-          images={DidDoDoneMobileScreenshots}
-          captions={DidDoDoneMobileCaptions}
+        images={DidDoDoneMobileScreenshots}
+        captions={DidDoDoneMobileCaptions}
+        />
+      </ContentWithMargins> */}
+      <ContentWithMargins top="2rem" bottom="4rem">
+        <DesktopSlideshow
+          images={NogPrototype2Images}
+          captions={NogPrototype2Captions}
         />
       </ContentWithMargins>
-      <TechSectionPresenter
-        color={COLORS.WHITE}
-        techIcons={[
-          TECH_ICONS.REACT,
-          TECH_ICONS.NODE_EXPRESS,
-          TECH_ICONS.REACT_NATIVE,
-          TECH_ICONS.EXPO,
-          TECH_ICONS.LOTTIE,
-        ]}
-        githubURL="https://github.com/JohnDHamm/nog-react"
+      <VideoPlayer
+        url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
+        caption="Placeholder for new video of the 2nd prototype."
       />
+      <ContentWithMargins top="3rem" bottom="2rem">
+        <TechSectionPresenter
+          color={COLORS.WHITE}
+          techIcons={[
+            TECH_ICONS.REACT,
+            TECH_ICONS.NODE_EXPRESS,
+            TECH_ICONS.REACT_NATIVE,
+            TECH_ICONS.EXPO,
+            TECH_ICONS.LOTTIE,
+          ]}
+          githubURL="https://github.com/JohnDHamm/nog-react"
+        />
+      </ContentWithMargins>
       <ContentWithMargins top="1rem" bottom="1rem">
         <a
           href="http://demo.nogworld.com"
@@ -66,17 +116,6 @@ export const NogPage: React.FC = () => {
           <Button>TRY THE DEMO</Button>
         </a>
       </ContentWithMargins>
-      <ContentWithMargins top="2rem" bottom="4rem">
-        <VideoPlayer
-          url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
-          caption="Here's some caption for the video."
-        />
-      </ContentWithMargins>
-      <TechSectionPresenter
-        color={COLORS.WHITE}
-        techIcons={[TECH_ICONS.ARDUINO, TECH_ICONS.MIT_APP_INVENTOR]}
-        githubURL="https://github.com/JohnDHamm/nog-arduino"
-      />
     </ProjectPageTemplate>
   );
 };
