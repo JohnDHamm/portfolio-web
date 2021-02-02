@@ -53,7 +53,7 @@ const SectionContainer = styled.div`
 
 export const SectionContentWrapper = styled.div`
   @media screen and (max-width: 1024px) {
-    width: 90%;
+    width: 95%;
     max-width: 480px;
   }
 `;
