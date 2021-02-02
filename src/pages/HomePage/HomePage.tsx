@@ -18,6 +18,7 @@ import {
   LogoContainer,
   ProjectsContainer,
   ProcessContainer,
+  SectionContentWrapper,
   TopBar,
 } from './HomePage.styles';
 import {
@@ -114,108 +115,120 @@ export const HomePage: React.FC = () => {
         )}
       </TopBar>
       <AboutContainer>
-        <SectionPresenter legend="ABOUT" color="#EEE">
-          <ContentContainer>
-            <ContentText>
-              Web and mobile app production from start to finish. Designed for
-              functionality, with user experience at the forefront. Built using
-              the latest technologies, with stability of code, future changes,
-              and feature additions in mind. Interactivity and animation pulled
-              from vast prior experience in animation and media production.
-            </ContentText>
-            <ContentText>
-              Take a look at some featured projects below and let me know what
-              you think!
-            </ContentText>
-            <ContentText style={{ fontStyle: 'italic' }}>
-              Some of the technologies I use:
-            </ContentText>
-            <AboutTechWrapper>
-              <AboutTechContainerOne>
-                <AboutTechIcon src={REACT.URL} alt={REACT.ALT} />
-                <AboutTechIcon src={TYPESCRIPT.URL} alt={TYPESCRIPT.ALT} />
-                <AboutTechIcon src={JEST.URL} alt={JEST.ALT} />
-                <AboutTechIcon src={REACT_NATIVE.URL} alt={REACT_NATIVE.ALT} />
-                <AboutTechIcon src={EXPO.URL} alt={EXPO.ALT} />
-                <AboutTechIcon src={ADOBE_XD.URL} alt={ADOBE_XD.ALT} />
-              </AboutTechContainerOne>
-              <AboutTechContainerTwo>
-                <AboutTechIcon
-                  src={STYLED_COMPONENTS.URL}
-                  alt={STYLED_COMPONENTS.ALT}
-                />
-                <AboutTechIcon src={REDUX.URL} alt={REDUX.ALT} />
-                <AboutTechIcon src={JS_ES6.URL} alt={JS_ES6.ALT} />
-                <AboutTechIcon src={CYPRESS.URL} alt={CYPRESS.ALT} />
-                <AboutTechIcon src={GIT.URL} alt={GIT.ALT} />
-                <AboutTechIcon src={JIRA.URL} alt={JIRA.ALT} />
-              </AboutTechContainerTwo>
-              <AboutTechContainerThree>
-                <AboutTechIcon src={NODE_JS.URL} alt={NODE_JS.ALT} />
-                <AboutTechIcon src={EXPRESS.URL} alt={EXPRESS.ALT} />
-                <AboutTechIcon src={MONGO_DB.URL} alt={MONGO_DB.ALT} />
-                <AboutTechIcon src={AWS_S3.URL} alt={AWS_S3.ALT} />
-                <AboutTechIcon src={HEROKU.URL} alt={HEROKU.ALT} />
-                <AboutTechIcon src={POSTGRES.URL} alt={POSTGRES.ALT} />
-              </AboutTechContainerThree>
-              <AboutTechContainerFour>
-                <AboutTechIcon src={ADOBE_PS.URL} alt={ADOBE_PS.ALT} />
-                <AboutTechIcon src={ADOBE_AI.URL} alt={ADOBE_AI.ALT} />
-                <AboutTechIcon src={ADOBE_AE.URL} alt={ADOBE_AE.ALT} />
-                <AboutTechIcon src={LOTTIE.URL} alt={LOTTIE.ALT} />
-                <AboutTechIcon src={SOCKET_IO.URL} alt={SOCKET_IO.ALT} />
-                <AboutTechIcon src={ARDUINO.URL} alt={ARDUINO.ALT} />
-              </AboutTechContainerFour>
-            </AboutTechWrapper>
-          </ContentContainer>
-        </SectionPresenter>
+        <SectionContentWrapper>
+          <SectionPresenter legend="ABOUT" color="#EEE">
+            <ContentContainer>
+              <ContentText>
+                Web and mobile app production from start to finish. Designed for
+                functionality, with user experience at the forefront. Built
+                using the latest technologies, with stability of code, future
+                changes, and feature additions in mind. Interactivity and
+                animation pulled from vast prior experience in animation and
+                media production.
+              </ContentText>
+              <ContentText>
+                Take a look at some featured projects below and let me know what
+                you think!
+              </ContentText>
+              <ContentText style={{ fontStyle: 'italic' }}>
+                Some of the technologies I use:
+              </ContentText>
+              <AboutTechWrapper>
+                <AboutTechContainerOne>
+                  <AboutTechIcon src={REACT.URL} alt={REACT.ALT} />
+                  <AboutTechIcon src={TYPESCRIPT.URL} alt={TYPESCRIPT.ALT} />
+                  <AboutTechIcon src={JEST.URL} alt={JEST.ALT} />
+                  <AboutTechIcon
+                    src={REACT_NATIVE.URL}
+                    alt={REACT_NATIVE.ALT}
+                  />
+                  <AboutTechIcon src={EXPO.URL} alt={EXPO.ALT} />
+                  <AboutTechIcon src={ADOBE_XD.URL} alt={ADOBE_XD.ALT} />
+                </AboutTechContainerOne>
+                <AboutTechContainerTwo>
+                  <AboutTechIcon
+                    src={STYLED_COMPONENTS.URL}
+                    alt={STYLED_COMPONENTS.ALT}
+                  />
+                  <AboutTechIcon src={REDUX.URL} alt={REDUX.ALT} />
+                  <AboutTechIcon src={JS_ES6.URL} alt={JS_ES6.ALT} />
+                  <AboutTechIcon src={CYPRESS.URL} alt={CYPRESS.ALT} />
+                  <AboutTechIcon src={GIT.URL} alt={GIT.ALT} />
+                  <AboutTechIcon src={JIRA.URL} alt={JIRA.ALT} />
+                </AboutTechContainerTwo>
+                <AboutTechContainerThree>
+                  <AboutTechIcon src={NODE_JS.URL} alt={NODE_JS.ALT} />
+                  <AboutTechIcon src={EXPRESS.URL} alt={EXPRESS.ALT} />
+                  <AboutTechIcon src={MONGO_DB.URL} alt={MONGO_DB.ALT} />
+                  <AboutTechIcon src={AWS_S3.URL} alt={AWS_S3.ALT} />
+                  <AboutTechIcon src={HEROKU.URL} alt={HEROKU.ALT} />
+                  <AboutTechIcon src={POSTGRES.URL} alt={POSTGRES.ALT} />
+                </AboutTechContainerThree>
+                <AboutTechContainerFour>
+                  <AboutTechIcon src={ADOBE_PS.URL} alt={ADOBE_PS.ALT} />
+                  <AboutTechIcon src={ADOBE_AI.URL} alt={ADOBE_AI.ALT} />
+                  <AboutTechIcon src={ADOBE_AE.URL} alt={ADOBE_AE.ALT} />
+                  <AboutTechIcon src={LOTTIE.URL} alt={LOTTIE.ALT} />
+                  <AboutTechIcon src={SOCKET_IO.URL} alt={SOCKET_IO.ALT} />
+                  <AboutTechIcon src={ARDUINO.URL} alt={ARDUINO.ALT} />
+                </AboutTechContainerFour>
+              </AboutTechWrapper>
+            </ContentContainer>
+          </SectionPresenter>
+        </SectionContentWrapper>
       </AboutContainer>
       <ProjectsContainer>
-        <ProjectSection projects={projectsData} onSeeMore={handleMore} />
+        <SectionContentWrapper>
+          <ProjectSection projects={projectsData} onSeeMore={handleMore} />
+        </SectionContentWrapper>
       </ProjectsContainer>
       <ProcessContainer>
-        <SectionPresenter legend="PROCESS" color="#EEE">
-          <ContentContainer>
-            <ContentText>
-              This will be where the process description shit goes...Interactive
-              with images and animation?????...probably will take awhile to
-              complete so I will just remove this section before launching the
-              updated web site.
-            </ContentText>
-          </ContentContainer>
-        </SectionPresenter>
+        <SectionContentWrapper>
+          <SectionPresenter legend="PROCESS" color="#EEE">
+            <ContentContainer>
+              <ContentText>
+                This will be where the process description shit
+                goes...Interactive with images and animation?????...probably
+                will take awhile to complete so I will just remove this section
+                before launching the updated web site.
+              </ContentText>
+            </ContentContainer>
+          </SectionPresenter>
+        </SectionContentWrapper>
       </ProcessContainer>
       <ContactContainer>
-        <SmallSectionPresenter legend="CONTACT" color="#EEE">
-          <ContactContent>
-            <a href="mailto:johndhammcodes@gmail.com?subject=Contact from johndhammcodes.com">
-              <ContactItem>
-                <ContactItemImage src={EmailIcon} alt="email" />
-                <ContactItemText>email</ContactItemText>
-              </ContactItem>
-            </a>
-            <a
-              href="https://github.com/JohnDHamm"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ContactItem>
-                <ContactItemImage src={GitHub_Logo} alt="GitHub" />
-                <ContactItemText>GitHub</ContactItemText>
-              </ContactItem>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/johndhamm/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ContactItem>
-                <ContactItemImage src={LinkedIn_Logo} alt="linkedIn" />
-                <ContactItemText>linkedIn</ContactItemText>
-              </ContactItem>
-            </a>
-          </ContactContent>
-        </SmallSectionPresenter>
+        <SectionContentWrapper>
+          <SmallSectionPresenter legend="CONTACT" color="#EEE">
+            <ContactContent>
+              <a href="mailto:johndhammcodes@gmail.com?subject=Contact from johndhammcodes.com">
+                <ContactItem>
+                  <ContactItemImage src={EmailIcon} alt="email" />
+                  <ContactItemText>email</ContactItemText>
+                </ContactItem>
+              </a>
+              <a
+                href="https://github.com/JohnDHamm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ContactItem>
+                  <ContactItemImage src={GitHub_Logo} alt="GitHub" />
+                  <ContactItemText>GitHub</ContactItemText>
+                </ContactItem>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/johndhamm/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ContactItem>
+                  <ContactItemImage src={LinkedIn_Logo} alt="linkedIn" />
+                  <ContactItemText>linkedIn</ContactItemText>
+                </ContactItem>
+              </a>
+            </ContactContent>
+          </SmallSectionPresenter>
+        </SectionContentWrapper>
       </ContactContainer>
     </div>
   );
