@@ -6,6 +6,10 @@ export const ButtonContainer = styled.div`
   position: relative;
   width: 480px;
   justify-content: center;
+
+  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
+    width: 100%;
+  }
 `;
 
 const arc = keyframes`
