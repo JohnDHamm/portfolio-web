@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AppStoreButton,
+  GitHubButton,
   MobileSlideshow,
   ProjectPageTemplate,
   TechSectionPresenter,
@@ -44,8 +45,17 @@ export const DidDoDonePage: React.FC = () => {
           TECH_ICONS.LOTTIE,
           TECH_ICONS.ADOBE_XD,
         ]}
-        githubURL="https://github.com/JohnDHamm/did-do-done-RN-app"
       />
+      <ContentWithMargins top="1rem" bottom="2rem">
+        <a
+          href="https://github.com/JohnDHamm/did-do-done-RN-app"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <GitHubButton />
+        </a>
+      </ContentWithMargins>
       <AppStoreButton url="https://apps.apple.com/us/app/did-do-done/id1522794964" />
     </ProjectPageTemplate>
   );

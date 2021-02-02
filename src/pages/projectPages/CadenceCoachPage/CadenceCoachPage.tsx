@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AppStoreButton,
+  GitHubButton,
   GooglePlayButton,
   MobileSlideshow,
   ProjectPageTemplate,
@@ -40,8 +41,17 @@ export const CadenceCoachPage: React.FC = () => {
       <TechSectionPresenter
         color={COLORS.WHITE}
         techIcons={[TECH_ICONS.REACT_NATIVE, TECH_ICONS.REDUX, TECH_ICONS.EXPO]}
-        githubURL="https://github.com/JohnDHamm/cadence-react_native"
       />
+      <ContentWithMargins top="1rem" bottom="2rem">
+        <a
+          href="https://github.com/JohnDHamm/cadence-react_native"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <GitHubButton />
+        </a>
+      </ContentWithMargins>
       <AppStoreButton url="https://apps.apple.com/us/app/cadence-coach/id1262128524" />
       <GooglePlayButton url="https://play.google.com/store/apps/details?id=com.cadencecoach" />
     </ProjectPageTemplate>

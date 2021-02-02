@@ -21,4 +21,4 @@ const Template: Story = () => (
   </div>
 );
 
-export const Desktop = Template.bind({});
+export const Default = Template.bind({});

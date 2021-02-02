@@ -3,6 +3,7 @@ import { Divider, PhaseText } from './NogPage.styles';
 import {
   Button,
   DesktopSlideshow,
+  GitHubButton,
   // MobileSlideshow,
   ProjectPageTemplate,
   TechSectionPresenter,
@@ -53,12 +54,21 @@ export const NogPage: React.FC = () => {
         url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
         caption="Here's some caption for the video."
       />
-      <ContentWithMargins top="3rem" bottom="2rem">
+      <ContentWithMargins top="3rem" bottom="1rem">
         <TechSectionPresenter
           color={COLORS.WHITE}
           techIcons={[TECH_ICONS.ARDUINO, TECH_ICONS.MIT_APP_INVENTOR]}
-          githubURL="https://github.com/JohnDHamm/nog-arduino"
         />
+      </ContentWithMargins>
+      <ContentWithMargins top="0" bottom="2rem">
+        <a
+          href="https://github.com/JohnDHamm/nog-arduino"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <GitHubButton />
+        </a>
       </ContentWithMargins>
       <Divider />
       <PhaseText>phase II</PhaseText>
@@ -93,7 +103,7 @@ export const NogPage: React.FC = () => {
         url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
         caption="Placeholder for new video of the 2nd prototype."
       />
-      <ContentWithMargins top="3rem" bottom="2rem">
+      <ContentWithMargins top="3rem" bottom="1rem">
         <TechSectionPresenter
           color={COLORS.WHITE}
           techIcons={[
@@ -103,8 +113,17 @@ export const NogPage: React.FC = () => {
             TECH_ICONS.EXPO,
             TECH_ICONS.LOTTIE,
           ]}
-          githubURL="https://github.com/JohnDHamm/nog-react"
         />
+      </ContentWithMargins>
+      <ContentWithMargins top="0" bottom="2rem">
+        <a
+          href="https://github.com/JohnDHamm/nog-react"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <GitHubButton />
+        </a>
       </ContentWithMargins>
       <ContentWithMargins top="1rem" bottom="1rem">
         <a
