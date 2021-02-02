@@ -115,7 +115,6 @@ export const MobileThickSlash = styled.div<{ color: string }>`
   width: 100%;
   height: 10px;
   margin-bottom: 2px;
-  transform: skewX(-15deg);
   background-color: ${(props) => props.color};
 `;
 
@@ -124,6 +123,5 @@ export const MobileThinSlash = styled.div<{ color: string }>`
   width: 100%;
   margin-top: 2px;
   margin-bottom: 3px;
-  transform: skewX(-15deg);
   background-color: ${(props) => props.color};
 `;
