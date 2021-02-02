@@ -19,14 +19,11 @@ const CONSTANTS = {
     maxWidth: '480px',
   },
   MOBILE_PROJECT_CARD_SIZE: {
-    SKEW_X_OFFSET: 21.4, // height of 80 * tan(15deg)
     CLOSED: {
       height: 80,
-      width: 'calc(100% - 21.4px)',
     },
     OPEN: {
       height: 320,
-      width: '100%',
     },
   },
   MOBILE_SCREENSHOT: {

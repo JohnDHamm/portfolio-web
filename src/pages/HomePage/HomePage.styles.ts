@@ -48,15 +48,18 @@ const SectionContainer = styled.div`
   @media screen and (max-width: 1024px) {
     padding-top: 0;
     padding-bottom: 1rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+  }
+`;
+
+export const SectionContentWrapper = styled.div`
+  @media screen and (max-width: 1024px) {
+    width: 95%;
+    max-width: 480px;
   }
 `;
 
 export const AboutContainer = styled(SectionContainer)`
   background-color: #222;
-  @media screen and (max-width: 1024px) {
-  }
 `;
 
 export const ContentContainer = styled.div`
@@ -160,17 +163,9 @@ export const AboutTechIcon = styled.img`
     height: 40px;
   }
 `;
-
-export const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled(SectionContainer)`
   background-color: #f8f8f8;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  width: 100%;
   overflow-x: hidden;
-  @media screen and (max-width: 1024px) {
-    max-width: 480px;
-    margin: auto;
-  }
 `;
 
 export const ProcessContainer = styled(SectionContainer)`
@@ -181,7 +176,7 @@ export const ContactContainer = styled(SectionContainer)`
   background-color: #000;
   padding-top: 1.5rem;
   @media screen and (max-width: 1024px) {
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
   }
 `;
 

@@ -8,7 +8,8 @@ import {
 } from './ProjectSection.styles';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
 import { CONSTANTS } from '../../styles';
-import { SectionPresenter } from '../SectionPresenter/SectionPresenter';
+import { SectionPresenterHoriz } from '../SectionPresenterHoriz/SectionPresenterHoriz';
+import { SectionPresenterVert } from '../SectionPresenterVert/SectionPresenterVert';
 import { LayoutSwitch } from '../LayoutSwitch/LayoutSwitch';
 import { MobileProjectCard } from '../MobileProjectCard/MobileProjectCard';
 
@@ -59,7 +60,7 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({
             animate={{ x: leftPosition }}
             transition={PROJECT_CARD_TRANSITION}
           >
-            <SectionPresenter legend="PROJECTS" color="#aaa">
+            <SectionPresenterHoriz legend="PROJECTS" color="#aaa">
               <StyledUL>
                 {projects.map((project) => (
                   <StyledLI key={project.id}>
@@ -72,12 +73,12 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({
                   </StyledLI>
                 ))}
               </StyledUL>
-            </SectionPresenter>
+            </SectionPresenterHoriz>
           </MotionContainer>
         </Container>
       }
       mobileComponent={
-        <SectionPresenter legend="PROJECTS" color="#CCC">
+        <SectionPresenterVert legend="PROJECTS" color="#CCC">
           <StyledMobileUL>
             {projects.map((project) => (
               <StyledLI key={project.id}>
@@ -90,7 +91,7 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({
               </StyledLI>
             ))}
           </StyledMobileUL>
-        </SectionPresenter>
+        </SectionPresenterVert>
       }
     />
   );

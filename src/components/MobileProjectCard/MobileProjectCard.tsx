@@ -36,23 +36,14 @@ export interface MobileProjectCardProps {
 
 type ContainerSize = {
   height: number;
-  width: string;
-  x: number;
-  skewX: number;
 };
 
 const initialContainerSize: ContainerSize = {
   height: MOBILE_PROJECT_CARD_SIZE.CLOSED.height,
-  width: MOBILE_PROJECT_CARD_SIZE.CLOSED.width,
-  x: MOBILE_PROJECT_CARD_SIZE.SKEW_X_OFFSET / 2,
-  skewX: -15,
 };
 
 const openContainerSize: ContainerSize = {
   height: MOBILE_PROJECT_CARD_SIZE.OPEN.height,
-  width: MOBILE_PROJECT_CARD_SIZE.OPEN.width,
-  x: 0,
-  skewX: 0,
 };
 
 /**
@@ -107,7 +98,6 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
             initial={false}
             animate={{
               opacity: isSelected ? 0.3 : 0.9,
-              skewX: isSelected ? 0 : 15,
               x: '-50%',
             }}
           />
@@ -115,7 +105,7 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
         <MotionTitle
           initial={false}
           transition={PROJECT_CARD_TRANSITION}
-          animate={{ y: isSelected ? -290 : 0, skewX: isSelected ? 0 : 15 }}
+          animate={{ y: isSelected ? -290 : 0 }}
         >
           {title.toUpperCase()}
         </MotionTitle>
@@ -142,7 +132,6 @@ export const MobileProjectCard: React.FC<MobileProjectCardProps> = ({
           initial={false}
           animate={{
             opacity: isSelected ? 1 : 0,
-            skewX: -15,
           }}
         >
           <MoreButton onClick={handleMore} color={colors.primary}>

@@ -21,7 +21,7 @@ export const DidDoDone_Project: Project = {
     primary: '#4c408f',
     secondary: 'goldenrod',
   },
-  bannerText: 'When did I...? And when do I need to do it again?',
+  bannerText: 'When did I...? And when do I do it again?',
   description: [
     'Having trouble remembering the last time you rotated your tires? Or wondering when you need to change the battery in your smoke alarm again?',
     'Well, wonder no more...Did? Do! Done. provides a way to log those events and set a date for when you need to do them again.',
@@ -38,7 +38,7 @@ export const CadenceCoach_Project: Project = {
     primary: '#818bb3',
     secondary: '#5b1514',
   },
-  bannerText: 'Cadence measurement with a tap of the finger',
+  bannerText: 'Measure cadence with a tap of the finger',
   description: [
     `Created for coaches of triathletes, this mobile app lets a coach easily measure an athlete's cadence during a swim or run workout. Select an athlete from your team list and tap the screen with each swim stroke or run step. Results are updated in real-time.`,
   ],

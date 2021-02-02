@@ -5,6 +5,7 @@ import { COLORS, FONTS } from '../../styles';
 export const MotionWrapper = styled(motion.div)`
   display: flex;
   margin: 0.25rem 0;
+  width: 100%;
 `;
 
 export const Container = styled.div<{ bgColor: string }>`
@@ -68,12 +69,11 @@ export const MotionScreencapsImage = styled(motion.img)`
 
 export const MotionButtonBlock = styled(motion.div)`
   position: absolute;
-  bottom: 125px;
+  bottom: 115px;
   right: 15px;
 `;
 
 export const MoreButton = styled.button<{ color: string }>`
-  border: none;
   background-color: ${COLORS.WHITE};
   color: ${(props) => props.color};
   font-family: ${FONTS.PRIMARY};
