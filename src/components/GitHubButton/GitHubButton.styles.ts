@@ -1,32 +1,34 @@
 import styled from 'styled-components';
-import { COLORS, CONSTANTS, FONTS } from '../../styles';
-
-const { SCREEN } = CONSTANTS;
+import { COLORS, FONTS } from '../../styles';
 
 export const Container = styled.div`
   background-color: ${COLORS.WHITE};
-  border: 1px solid ${COLORS.BLACK};
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.25rem;
   transform: skewX(-15deg);
 
   &:hover {
-    border: 1px solid ${COLORS.WHITE};
+    background-color: ${COLORS.BLACK};
+
+    & img {
+      filter: invert(100%);
+    }
+
+    & p {
+      color: ${COLORS.WHITE};
+    }
   }
 `;
 
 export const ContentBlock = styled.div`
   display: flex;
   transform: skewX(15deg);
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (${SCREEN.TABLET}) {
-    flex-direction: row;
-  }
+  justify-content: center;
 `;
 
 export const GitHubLogo = styled.img`
+  height: 32px;
   width: 32px;
+  margin: 0 0.5rem;
 `;
 
 export const StyledText = styled.p`
@@ -35,10 +37,4 @@ export const StyledText = styled.p`
   font-family: ${FONTS.PRIMARY};
   color: ${COLORS.BLACK};
   padding-top: 0.25rem;
-  padding-left: 0;
-
-  @media screen and (${SCREEN.TABLET}) {
-    padding-left: 0.25rem;
-    padding-top: 0;
-  }
 `;

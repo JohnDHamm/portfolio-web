@@ -4,6 +4,7 @@ import {
   AnimatedFootball,
   Button,
   DesktopSlideshow,
+  GitHubButton,
   MobileSlideshow,
   ProjectPageTemplate,
   TechSectionPresenter,
@@ -56,8 +57,17 @@ export const TheBigBoardPage: React.FC = () => {
           TECH_ICONS.SOCKET_IO,
           TECH_ICONS.ADOBE_XD,
         ]}
-        githubURL="https://github.com/JohnDHamm/the-big-board-app"
       />
+      <ContentWithMargins top="1rem" bottom="2rem">
+        <a
+          href="https://github.com/JohnDHamm/the-big-board-app"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <GitHubButton />
+        </a>
+      </ContentWithMargins>
       <ContentWithMargins top="1rem" bottom="1rem">
         <ButtonContainer>
           <FootballWrapper>

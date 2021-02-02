@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AppStoreButton,
+  GitHubButton,
   MobileSlideshow,
   ProjectPageTemplate,
   TechSectionPresenter,
@@ -43,8 +44,17 @@ export const TeamTimerPage: React.FC = () => {
           TECH_ICONS.EXPO,
           TECH_ICONS.ADOBE_XD,
         ]}
-        githubURL="https://github.com/JohnDHamm/team-timer-pro"
       />
+      <ContentWithMargins top="1rem" bottom="2rem">
+        <a
+          href="https://github.com/JohnDHamm/team-timer-pro"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <GitHubButton />
+        </a>
+      </ContentWithMargins>
       <AppStoreButton url="https://apps.apple.com/us/app/team-timer-pro/id1458066942" />
     </ProjectPageTemplate>
   );
