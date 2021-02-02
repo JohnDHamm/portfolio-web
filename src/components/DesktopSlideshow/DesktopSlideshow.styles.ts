@@ -9,7 +9,7 @@ export const Container = styled.div`
   height: ${DESKTOP_SCREENSHOT.DESKTOP_HEIGHT};
   width: ${DESKTOP_SCREENSHOT.DESKTOP_WIDTH};
 
-  @media screen and (${SCREEN.TABLET}) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     width: 90vw;
     max-width: ${DESKTOP_SCREENSHOT.MOBILE_MAX_WIDTH};
     height: 55vw;
@@ -56,7 +56,7 @@ export const Caption = styled(motion.div)<{ height: number }>`
   font-size: 1rem;
   color: ${COLORS.WHITE};
 
-  @media screen and (${SCREEN.TABLET}) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     width: 90vw;
     max-width: ${DESKTOP_SCREENSHOT.MOBILE_MAX_WIDTH};
     top: ${(props) => props.height + 'px'};

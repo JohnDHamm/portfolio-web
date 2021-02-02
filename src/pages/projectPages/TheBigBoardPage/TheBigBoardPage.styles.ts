@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { CONSTANTS } from '../../../styles';
+const { SCREEN } = CONSTANTS;
 
 export const ButtonContainer = styled.div`
   display: flex;
@@ -7,7 +8,7 @@ export const ButtonContainer = styled.div`
   width: 480px;
   justify-content: center;
 
-  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
+  @media screen and (${SCREEN.MOBILE}) {
     width: 100%;
   }
 `;
@@ -50,7 +51,7 @@ export const FootballWrapper = styled.div`
   width: 100px;
   animation: ${arc} 2.5s infinite linear;
 
-  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
+  @media screen and (${SCREEN.MOBILE}) {
     display: none;
   }
 `;

@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
-import { FONTS } from '../../styles';
+import { CONSTANTS, FONTS } from '../../styles';
+const { SCREEN } = CONSTANTS;
 
 const logoContainerAnim = keyframes`
   from { width: 600px }
@@ -24,7 +25,7 @@ export const TopBar = styled.div`
 export const AnimLogoContainer = styled.div`
   animation: ${logoContainerAnim} 5.5s ease-in-out both;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (${SCREEN.MOBILE}) {
     animation: ${mobileLogoContainerAnim} 5.5s ease-in-out both;
   }
 `;
@@ -33,7 +34,7 @@ export const LogoContainer = styled.div`
   width: 200px;
   padding: 0.5rem 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (${SCREEN.MOBILE}) {
     width: 65%;
   }
 `;
@@ -45,14 +46,14 @@ const SectionContainer = styled.div`
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     padding-top: 0;
     padding-bottom: 1rem;
   }
 `;
 
 export const SectionContentWrapper = styled.div`
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     width: 95%;
     max-width: 480px;
   }
@@ -66,7 +67,7 @@ export const ContentContainer = styled.div`
   max-width: 735px;
   padding: 2rem 2.5rem 2rem 4rem;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     padding: 1rem 0.5rem;
   }
 `;
@@ -82,7 +83,7 @@ export const ContentText = styled.p`
 export const AboutTechWrapper = styled.div`
   position: relative;
   width: 100%;
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     height: 60px;
   }
 `;
@@ -134,7 +135,7 @@ const AboutTechContainer = styled.div`
   flex-wrap: wrap;
   animation-duration: 24s;
   animation-iteration-count: infinite;
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     left: 0px;
     height: 40px;
     margin-top: 0.5rem;
@@ -159,7 +160,7 @@ export const AboutTechIcon = styled.img`
   height: 60px;
   margin-bottom: 0.5rem;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     height: 40px;
   }
 `;
@@ -175,7 +176,7 @@ export const ProcessContainer = styled(SectionContainer)`
 export const ContactContainer = styled(SectionContainer)`
   background-color: #000;
   padding-top: 1.5rem;
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     padding-top: 0.25rem;
   }
 `;
@@ -186,7 +187,7 @@ export const ContactContent = styled.div`
   display: flex;
   justify-content: center;
   align-self: center;
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     margin: 1rem 0;
   }
 `;
@@ -198,7 +199,7 @@ export const ContactItem = styled.div`
   &:hover {
     opacity: 1;
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     opacity: 0.75;
   }
 `;

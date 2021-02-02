@@ -18,7 +18,7 @@ export const TextBlock = styled.p`
   color: ${COLORS.WHITE};
   max-width: 800px;
 
-  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+  @media screen and (${CONSTANTS.SCREEN.TABLET_AND_SMALLER}) {
     max-width: 480px;
   }
 `;
