@@ -35,7 +35,7 @@ export const TheBigBoardPage: React.FC = () => {
       title={title}
       mainText="Draft day in fantasy football...the fun...the competition...the embarassing smack talk...that's why we play! And The Big Board web app delivers a draft day experience that rivals the pros!"
     >
-      <ContentWithMargins top="2rem" bottom="4rem">
+      <ContentWithMargins top="2rem" bottom="5rem">
         <DesktopSlideshow
           images={BigBoardDesktopScreenshots}
           captions={BigBoardDesktopCaptions}
