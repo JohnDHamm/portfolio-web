@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 800px;
   height: 450px;
 
-  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+  @media screen and (${CONSTANTS.SCREEN.TABLET_AND_SMALLER}) {
     width: 90vw;
     height: 50.625vw;
     max-width: 480px;

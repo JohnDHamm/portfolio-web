@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { COLORS, CONSTANTS, FONTS } from '../../styles';
+const { SCREEN } = CONSTANTS;
 
 export const StyledPageWrapper = styled.div<{ bgColor: string }>`
   position: relative;
@@ -7,7 +8,7 @@ export const StyledPageWrapper = styled.div<{ bgColor: string }>`
   padding: 2rem 0;
   background-color: ${(props) => props.bgColor};
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     padding: 1rem 0;
   }
 `;
@@ -19,11 +20,11 @@ export const CenteredContent = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     max-width: 600px;
   }
 
-  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
+  @media screen and (${SCREEN.MOBILE}) {
     width: 90%;
     max-width: 480px;
   }
@@ -34,7 +35,7 @@ export const Logo = styled.img<{ width: number }>`
   margin-top: 1rem;
   margin-bottom: 1rem;
 
-  @media screen and (${CONSTANTS.SCREEN.MOBILE}) {
+  @media screen and (${SCREEN.MOBILE}) {
     width: 80vw;
   }
 `;
@@ -44,7 +45,7 @@ export const Title = styled.div<{ color: string }>`
   font-size: 1.75rem;
   font-family: ${FONTS.PRIMARY};
 
-  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     font-size: 1.25rem;
   }
 `;
@@ -54,7 +55,7 @@ export const StyledTextBlock = styled.div`
   width: 100%;
   max-width: 800px;
 
-  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     max-width: 480px;
     padding: 0.25rem 0;
   }
@@ -65,7 +66,7 @@ export const StyledTextBlock = styled.div`
     font-size: 1.25rem;
     font-family: ${FONTS.PRIMARY};
 
-    @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+    @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
       font-size: 1rem;
     }
   }

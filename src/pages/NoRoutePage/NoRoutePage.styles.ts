@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
-import { FONTS } from '../../styles';
+import { CONSTANTS, FONTS } from '../../styles';
+const { SCREEN } = CONSTANTS;
 
 export const Page = styled.div`
   width: 100%;
@@ -10,7 +11,7 @@ export const Page = styled.div`
   align-items: center;
   background-color: #000;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     justify-content: flex-start;
   }
 `;
@@ -42,7 +43,7 @@ const MessageText = styled.p`
   font-family: ${FONTS.PRIMARY};
   font-size: 1.5rem;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     font-size: 1.25rem;
   }
 `;

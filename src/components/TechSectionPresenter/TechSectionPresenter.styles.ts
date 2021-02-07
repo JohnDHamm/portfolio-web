@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { CONSTANTS, FONTS } from '../../styles';
 
-const { MOBILE_CONTAINER } = CONSTANTS;
+const { MOBILE_CONTAINER, SCREEN } = CONSTANTS;
 const TECH_HEIGHT = '100px';
 
 export const LegendBlock = styled.div`
@@ -53,7 +53,7 @@ export const ContentBlock = styled.div`
   transform: skewX(-15deg);
   background-color: rgba(0, 0, 0, 0.4);
 
-  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     height: auto;
     width: 100%;
     flex-direction: column;
@@ -70,7 +70,7 @@ export const Content = styled.div`
   transform: skewX(15deg);
   padding-right: 0.5rem;
 
-  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     height: auto;
     width: 100%;
     flex-direction: column;
@@ -85,7 +85,7 @@ export const IconsBlock = styled.div`
   flex-direction: row;
   margin-left: 0.25rem;
   margin-right: 1rem;
-  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     height: 48px;
     margin: 0.5rem 0;
   }
@@ -95,7 +95,7 @@ export const Icon = styled.img`
   height: 60px;
   margin: 0 0.5rem;
 
-  @media screen and (${CONSTANTS.SCREEN.TABLET}) {
+  @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     height: 48px;
   }
 `;
