@@ -18,7 +18,7 @@ export const BigBoardDesktopScreenshots: any[] = [
 
 export const BigBoardDesktopCaptions: string[] = [
   'The draft is ready and you are on the clock with the first pick!',
-  'Players page - this is where you find your player and make your selection. Each player is shown with their position rank and bye week. To help with your selection process, a list of overall rankings is provided and your team needs are updated with each selection.',
+  'Players page: where you make your selection. Players are shown with position rank and bye week. To help with your selection process, a list of overall rankings is provided and your team needs are updated with each selection.',
   'You can see all the players for multiple positions at the same time.',
   'Choose to list the players alphabetically to find a player more quickly.',
   'Or list the players by their team.',

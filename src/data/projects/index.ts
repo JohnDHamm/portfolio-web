@@ -56,8 +56,8 @@ export const Nog_Project: Project = {
   },
   bannerText: 'Programmable lighted ugly XMAS sweater',
   description: [
-    'Lucas ipsum dolor sit amet vader ahsoka mace moff luuke watto jabba sidious jar chewbacca. Fett moff solo kashyyyk moff skywalker. Sebulba mara qui-gonn darth yoda kenobi.',
-    'Skywalker mon ackbar luke darth. Watto darth obi-wan hutt solo obi-wan wedge dooku. Jade fett luke boba solo. Coruscant maul cade dagobah jade kenobi mon darth. Ponda wedge tusken raider moff obi-wan. Calrissian greedo skywalker jade utapau qui-gon.',
+    'Lucas ipsum dolor sit amet vader ahsoka mace moff luuke watto jabba sidious jar chewbacca. Fett moff solo kashyyyk moff skywalker.',
+    'Skywalker mon ackbar luke darth. Watto darth obi-wan hutt solo obi-wan wedge dooku. Jade fett luke boba solo. Coruscant maul cade dagobah jade kenobi mon darth.',
   ],
   cardImage: require('./nog/nog_card.png'),
   mobileCardImage: require('./nog/nog_mobileCard.png'),
