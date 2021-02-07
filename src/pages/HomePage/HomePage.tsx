@@ -17,7 +17,7 @@ import {
   ContactItemText,
   LogoContainer,
   ProjectsContainer,
-  ProcessContainer,
+  // ProcessContainer,
   SectionContentWrapper,
   TopBar,
 } from './HomePage.styles';
@@ -203,7 +203,7 @@ export const HomePage: React.FC = () => {
           <ProjectSection projects={projectsData} onSeeMore={handleMore} />
         </SectionContentWrapper>
       </ProjectsContainer>
-      <ProcessContainer>
+      {/* <ProcessContainer>
         <SectionContentWrapper>
           <LayoutSwitch
             desktopComponent={
@@ -218,7 +218,7 @@ export const HomePage: React.FC = () => {
             }
           />
         </SectionContentWrapper>
-      </ProcessContainer>
+      </ProcessContainer> */}
       <ContactContainer>
         <SectionContentWrapper>
           <SmallSectionPresenter legend="CONTACT" color="#EEE">
