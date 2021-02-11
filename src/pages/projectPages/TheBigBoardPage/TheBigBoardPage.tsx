@@ -40,6 +40,7 @@ export const TheBigBoardPage: React.FC = () => {
         <DesktopSlideshow
           images={BigBoardDesktopScreenshots}
           captions={BigBoardDesktopCaptions}
+          type="laptop"
         />
       </ContentWithMargins>
       <ContentWithMargins top="2rem" bottom="4rem">

@@ -1,9 +1,12 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { DesktopSlideshow, DesktopSlideshowProps } from './DesktopSlideshow';
-const TEST01 = require('../../mocks/desktop_screenshots_slideshow_test01.png');
-const TEST02 = require('../../mocks/desktop_screenshots_slideshow_test02.png');
-const TEST03 = require('../../mocks/desktop_screenshots_slideshow_test03.png');
+const LAPTOP01 = require('../../mocks/desktop_slideshow_laptopScreen_test01.png');
+const LAPTOP02 = require('../../mocks/desktop_slideshow_laptopScreen_test02.png');
+const LAPTOP03 = require('../../mocks/desktop_slideshow_laptopScreen_test03.png');
+const DESKTOP01 = require('../../mocks/desktop_slideshow_desktopScreen_test01.png');
+const DESKTOP02 = require('../../mocks/desktop_slideshow_desktopScreen_test02.png');
+const DESKTOP03 = require('../../mocks/desktop_slideshow_desktopScreen_test03.png');
 const CAPTIONS = [
   'This is the caption for image 1.',
   'Another caption.',
@@ -21,8 +24,17 @@ const Template: Story<DesktopSlideshowProps> = (args) => (
   </div>
 );
 
-export const Default = Template.bind({});
-Default.args = {
-  images: [TEST01, TEST02, TEST03],
+export const LaptopScreenshots = Template.bind({});
+
+LaptopScreenshots.args = {
+  images: [LAPTOP01, LAPTOP02, LAPTOP03],
   captions: CAPTIONS,
+  type: 'laptop',
+};
+
+export const DesktopScreenshots = Template.bind({});
+DesktopScreenshots.args = {
+  images: [DESKTOP01, DESKTOP02, DESKTOP03],
+  captions: CAPTIONS,
+  type: 'desktop',
 };
