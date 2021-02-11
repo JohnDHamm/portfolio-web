@@ -18,6 +18,10 @@ export interface DesktopSlideshowProps {
    * Array of images
    */
   images: any[];
+  /**
+   * Size of slideshow images
+   */
+  type: 'laptop' | 'desktop';
 }
 
 const variants = {
@@ -59,11 +63,12 @@ const captionVariants = {
 };
 
 /**
- * Slideshow component for desktop screenshots
+ * Slideshow component for laptop or desktop screenshots
  */
 export const DesktopSlideshow: React.FC<DesktopSlideshowProps> = ({
   captions = [],
   images,
+  type,
 }) => {
   const [[imageIndex, direction], setImageIndex] = React.useState<number[]>([
     0,
@@ -82,7 +87,7 @@ export const DesktopSlideshow: React.FC<DesktopSlideshowProps> = ({
 
   return (
     <>
-      <Container ref={measuredRef}>
+      <Container ref={measuredRef} type={type}>
         <AnimatePresence initial={false} custom={direction}>
           <Screenshot
             key={imageIndex}

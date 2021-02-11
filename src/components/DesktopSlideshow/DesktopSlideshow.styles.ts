@@ -2,17 +2,44 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { COLORS, CONSTANTS, FONTS } from '../../styles';
 
-const { DESKTOP_SCREENSHOT, SCREEN } = CONSTANTS;
+const {
+  DESKTOP_SCREENSHOT,
+  DESKTOP_SLIDESHOW,
+  LAPTOP_SCREENSHOT,
+  SCREEN,
+} = CONSTANTS;
 
-export const Container = styled.div`
+const getHeight = (type: string) => {
+  switch (type) {
+    case 'laptop':
+      return LAPTOP_SCREENSHOT.HEIGHT;
+    case 'desktop':
+      return DESKTOP_SCREENSHOT.HEIGHT;
+    default:
+      return null;
+  }
+};
+
+const getMobileHeight = (type: string) => {
+  switch (type) {
+    case 'laptop':
+      return '55vw';
+    case 'desktop':
+      return '50vw';
+    default:
+      return null;
+  }
+};
+
+export const Container = styled.div<{ type: string }>`
   position: relative;
-  height: ${DESKTOP_SCREENSHOT.DESKTOP_HEIGHT};
-  width: ${DESKTOP_SCREENSHOT.DESKTOP_WIDTH};
+  height: ${(props) => getHeight(props.type)};
+  width: ${DESKTOP_SLIDESHOW.WIDTH};
 
   @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     width: 90vw;
-    max-width: ${DESKTOP_SCREENSHOT.MOBILE_MAX_WIDTH};
-    height: 55vw;
+    max-width: ${DESKTOP_SLIDESHOW.MOBILE_MAX_WIDTH};
+    height: ${(props) => getMobileHeight(props.type)};
     max-height: ${DESKTOP_SCREENSHOT.MOBILE_MAX_HEIGHT};
   }
 `;
@@ -48,8 +75,8 @@ export const NextNavButton = styled(NavButton)`
 
 export const Caption = styled(motion.div)<{ height: number }>`
   position: absolute;
-  top: ${DESKTOP_SCREENSHOT.DESKTOP_HEIGHT};
-  width: ${DESKTOP_SCREENSHOT.DESKTOP_WIDTH};
+  top: ${(props) => props.height + 'px'};
+  width: ${DESKTOP_SLIDESHOW.WIDTH};
   padding-top: 0.5rem;
   text-align: center;
   font-family: ${FONTS.PRIMARY};
@@ -58,7 +85,7 @@ export const Caption = styled(motion.div)<{ height: number }>`
 
   @media screen and (${SCREEN.TABLET_AND_SMALLER}) {
     width: 90vw;
-    max-width: ${DESKTOP_SCREENSHOT.MOBILE_MAX_WIDTH};
+    max-width: ${DESKTOP_SLIDESHOW.MOBILE_MAX_WIDTH};
     top: ${(props) => props.height + 'px'};
   }
 `;

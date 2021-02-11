@@ -85,6 +85,7 @@ export const NogPage: React.FC = () => {
         <DesktopSlideshow
           images={NogDesignImages}
           captions={NogDesignCaptions}
+          type="desktop"
         />
       </ContentWithMargins>
       {/* <ContentWithMargins top="2rem" bottom="4rem">
@@ -97,6 +98,7 @@ export const NogPage: React.FC = () => {
         <DesktopSlideshow
           images={NogPrototype2Images}
           captions={NogPrototype2Captions}
+          type="laptop"
         />
       </ContentWithMargins>
       <VideoPlayer
