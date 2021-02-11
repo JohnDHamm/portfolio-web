@@ -6,12 +6,22 @@ export const NogDesignImages: any[] = [
   `${DESIGN_URL}01.png`,
   `${DESIGN_URL}02.png`,
   `${DESIGN_URL}03.png`,
+  `${DESIGN_URL}04.png`,
+  `${DESIGN_URL}05.png`,
+  `${DESIGN_URL}06.png`,
+  `${DESIGN_URL}07.png`,
+  `${DESIGN_URL}08.png`,
 ];
 
 export const NogDesignCaptions: string[] = [
   'Placeholder for slideshow of app design/wireframe images',
   'Second design image',
   'Third design image',
+  'Fourth design image',
+  'Fifth design image',
+  'Sixth design image',
+  'Seventh design image',
+  'Eigtth design image',
 ];
 
 export const NogPrototype2Images: any[] = [
