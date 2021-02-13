@@ -61,6 +61,7 @@ export const Nog_Project: Project = {
   ],
   cardImage: require('./nog/nog_card.png'),
   mobileCardImage: require('./nog/nog_mobileCard.png'),
+  screencaps: require('./nog/nog_screencaps.png'),
 };
 
 export const TheBigBoard_Project: Project = {

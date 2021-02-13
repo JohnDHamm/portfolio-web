@@ -26,11 +26,24 @@ const getHeight = (type: SlideshowType) => {
 const getMobileHeight = (type: SlideshowType) => {
   switch (type) {
     case 'laptop':
-      return '55vw';
+      return LAPTOP_SCREENSHOT.MOBILE_HEIGHT;
     case 'desktop':
-      return '50vw';
+      return DESKTOP_SCREENSHOT.MOBILE_HEIGHT;
     case 'iphone':
-      return '67.5vw';
+      return IPHONE_SCREENSHOT.MOBILE_HEIGHT;
+    default:
+      return null;
+  }
+};
+
+const getMobileMaxHeight = (type: SlideshowType) => {
+  switch (type) {
+    case 'laptop':
+      return LAPTOP_SCREENSHOT.MOBILE_MAX_HEIGHT;
+    case 'desktop':
+      return DESKTOP_SCREENSHOT.MOBILE_MAX_HEIGHT;
+    case 'iphone':
+      return IPHONE_SCREENSHOT.MOBILE_MAX_HEIGHT;
     default:
       return null;
   }
@@ -45,7 +58,7 @@ export const Container = styled.div<{ type: SlideshowType }>`
     width: 90vw;
     max-width: ${DESKTOP_SLIDESHOW.MOBILE_MAX_WIDTH};
     height: ${(props) => getMobileHeight(props.type)};
-    max-height: ${DESKTOP_SCREENSHOT.MOBILE_MAX_HEIGHT};
+    max-height: ${(props) => getMobileMaxHeight(props.type)};
   }
 `;
 
