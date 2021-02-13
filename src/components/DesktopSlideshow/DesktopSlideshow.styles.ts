@@ -26,11 +26,11 @@ const getHeight = (type: SlideshowType) => {
 const getMobileHeight = (type: SlideshowType) => {
   switch (type) {
     case 'laptop':
-      return '55vw';
+      return LAPTOP_SCREENSHOT.MOBILE_HEIGHT;
     case 'desktop':
-      return '50vw';
+      return DESKTOP_SCREENSHOT.MOBILE_HEIGHT;
     case 'iphone':
-      return '67.5vw';
+      return IPHONE_SCREENSHOT.MOBILE_HEIGHT;
     default:
       return null;
   }
