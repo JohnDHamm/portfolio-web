@@ -14,24 +14,32 @@ export const NogDesignImages: any[] = [
 ];
 
 export const NogDesignCaptions: string[] = [
-  'Placeholder for slideshow of app design/wireframe images',
-  'Second design image',
-  'Third design image',
-  'Fourth design image',
-  'Fifth design image',
-  'Sixth design image',
-  'Seventh design image',
-  'Eigtth design image',
+  'Web app design wireframe: custom pattern creation.',
+  'Web app design wireframe: custom pattern playback.',
+  'Web app design wireframe: custom song pattern creation.',
+  'Web app design wireframe: custom song pattern playback.',
+  'Web app design wireframe: nog factory - pattern block.',
+  'Web app design wireframe: nog factory - pattern group.',
+  'Mobile app design wireframe: Home, User Patterns, Custom Pattern.',
+  'Mobile app design wireframe: Nog Play, Community Patterns, Pattern Details.',
 ];
 
 export const NogPrototype2Images: any[] = [
   `${PROTOTYPE_URL}01.png`,
   `${PROTOTYPE_URL}02.png`,
   `${PROTOTYPE_URL}03.png`,
+  `${PROTOTYPE_URL}04.png`,
+  `${PROTOTYPE_URL}05.png`,
+  `${PROTOTYPE_URL}06.png`,
+  `${PROTOTYPE_URL}07.png`,
 ];
 
 export const NogPrototype2Captions: string[] = [
-  'Placeholder for slideshow of prototype 2 photos',
-  'Second prototype image',
-  'Third prototype image',
+  'Nog prototype 2.',
+  'Nog prototype 2.',
+  'Nog prototype 2.',
+  'Nog prototype 2.',
+  'Nog prototype 2.',
+  'Nog prototype 2.',
+  'Nog prototype 2.',
 ];

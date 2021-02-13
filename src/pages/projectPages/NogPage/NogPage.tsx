@@ -94,11 +94,11 @@ export const NogPage: React.FC = () => {
         captions={DidDoDoneMobileCaptions}
         />
       </ContentWithMargins> */}
-      <ContentWithMargins top="2rem" bottom="4rem">
+      <ContentWithMargins top="2rem" bottom="6rem">
         <DesktopSlideshow
           images={NogPrototype2Images}
           captions={NogPrototype2Captions}
-          type="laptop"
+          type="iphone"
         />
       </ContentWithMargins>
       <VideoPlayer
