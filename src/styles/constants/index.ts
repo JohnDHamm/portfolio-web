@@ -21,6 +21,11 @@ const CONSTANTS = {
     HEIGHT: '488px',
     MOBILE_MAX_HEIGHT: '292px',
   },
+  IPHONE_SCREENSHOT: {
+    ASPECT_RATIO: 1920 / 1440,
+    HEIGHT: '600px',
+    MOBILE_MAX_HEIGHT: '360px',
+  },
   MOBILE_CONTAINER: {
     width: '100%',
     maxWidth: '480px',

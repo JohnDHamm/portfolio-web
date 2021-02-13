@@ -5,33 +5,38 @@ import { COLORS, CONSTANTS, FONTS } from '../../styles';
 const {
   DESKTOP_SCREENSHOT,
   DESKTOP_SLIDESHOW,
+  IPHONE_SCREENSHOT,
   LAPTOP_SCREENSHOT,
   SCREEN,
 } = CONSTANTS;
 
-const getHeight = (type: string) => {
+const getHeight = (type: SlideshowType) => {
   switch (type) {
     case 'laptop':
       return LAPTOP_SCREENSHOT.HEIGHT;
     case 'desktop':
       return DESKTOP_SCREENSHOT.HEIGHT;
+    case 'iphone':
+      return IPHONE_SCREENSHOT.HEIGHT;
     default:
       return null;
   }
 };
 
-const getMobileHeight = (type: string) => {
+const getMobileHeight = (type: SlideshowType) => {
   switch (type) {
     case 'laptop':
       return '55vw';
     case 'desktop':
       return '50vw';
+    case 'iphone':
+      return '67.5vw';
     default:
       return null;
   }
 };
 
-export const Container = styled.div<{ type: string }>`
+export const Container = styled.div<{ type: SlideshowType }>`
   position: relative;
   height: ${(props) => getHeight(props.type)};
   width: ${DESKTOP_SLIDESHOW.WIDTH};

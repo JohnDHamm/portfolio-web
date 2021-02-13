@@ -7,6 +7,8 @@ const LAPTOP03 = require('../../mocks/desktop_slideshow_laptopScreen_test03.png'
 const DESKTOP01 = require('../../mocks/desktop_slideshow_desktopScreen_test01.png');
 const DESKTOP02 = require('../../mocks/desktop_slideshow_desktopScreen_test02.png');
 const DESKTOP03 = require('../../mocks/desktop_slideshow_desktopScreen_test03.png');
+const IPHONE01 = require('../../mocks/desktop_slideshow_iphoneScreen_test01.png');
+const IPHONE02 = require('../../mocks/desktop_slideshow_iphoneScreen_test02.png');
 const CAPTIONS = [
   'This is the caption for image 1.',
   'Another caption.',
@@ -37,4 +39,11 @@ DesktopScreenshots.args = {
   images: [DESKTOP01, DESKTOP02, DESKTOP03],
   captions: CAPTIONS,
   type: 'desktop',
+};
+
+export const IphoneScreenshots = Template.bind({});
+IphoneScreenshots.args = {
+  images: [IPHONE01, IPHONE02],
+  captions: CAPTIONS,
+  type: 'iphone',
 };

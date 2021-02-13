@@ -9,6 +9,10 @@ import {
 } from './DesktopSlideshow.styles';
 import { SlideshowNavButton } from '../SlideshowNavButton/SlideshowNavButton';
 
+declare global {
+  type SlideshowType = 'desktop' | 'iphone' | 'laptop';
+}
+
 export interface DesktopSlideshowProps {
   /**
    * Array of captions
@@ -21,7 +25,7 @@ export interface DesktopSlideshowProps {
   /**
    * Size of slideshow images
    */
-  type: 'laptop' | 'desktop';
+  type: SlideshowType;
 }
 
 const variants = {
