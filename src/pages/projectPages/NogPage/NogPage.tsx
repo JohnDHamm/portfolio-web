@@ -4,7 +4,6 @@ import {
   Button,
   DesktopSlideshow,
   GitHubButton,
-  // MobileSlideshow,
   ProjectPageTemplate,
   TechSectionPresenter,
   VideoPlayer,
@@ -13,10 +12,6 @@ import { ContentWithMargins, TextBlock } from '../styles';
 import NogLogo from '../../../data/projects/nog/nog_logo.png';
 import { TECH_ICONS } from '../../../assets/images/tech_icons';
 import { COLORS } from '../../../styles';
-// import {
-//   DidDoDoneMobileCaptions,
-//   DidDoDoneMobileScreenshots,
-// } from '../../../data/projects/diddodone';
 import { Nog_Project } from '../../../data/projects';
 import {
   NogDesignCaptions,
@@ -52,7 +47,7 @@ export const NogPage: React.FC = () => {
       </TextBlock>
       <VideoPlayer
         url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
-        caption="Here's some caption for the video."
+        caption="Nog prototype 1."
       />
       <ContentWithMargins top="3rem" bottom="1rem">
         <TechSectionPresenter
@@ -88,12 +83,6 @@ export const NogPage: React.FC = () => {
           type="desktop"
         />
       </ContentWithMargins>
-      {/* <ContentWithMargins top="2rem" bottom="4rem">
-        <MobileSlideshow
-        images={DidDoDoneMobileScreenshots}
-        captions={DidDoDoneMobileCaptions}
-        />
-      </ContentWithMargins> */}
       <ContentWithMargins top="2rem" bottom="6rem">
         <DesktopSlideshow
           images={NogPrototype2Images}
@@ -102,8 +91,8 @@ export const NogPage: React.FC = () => {
         />
       </ContentWithMargins>
       <VideoPlayer
-        url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
-        caption="Placeholder for new video of the 2nd prototype."
+        url="https://player.vimeo.com/video/512007894?color=ffffff&title=0&byline=0&portrait=0"
+        caption="Nog prototype 2."
       />
       <ContentWithMargins top="3rem" bottom="1rem">
         <TechSectionPresenter

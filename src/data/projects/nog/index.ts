@@ -35,11 +35,11 @@ export const NogPrototype2Images: any[] = [
 ];
 
 export const NogPrototype2Captions: string[] = [
-  'Nog prototype 2.',
-  'Nog prototype 2.',
-  'Nog prototype 2.',
-  'Nog prototype 2.',
-  'Nog prototype 2.',
-  'Nog prototype 2.',
-  'Nog prototype 2.',
+  'Nog prototype 2 construction.',
+  'Nog prototype 2 construction.',
+  'Nog prototype 2 construction.',
+  'Nog prototype 2 construction.',
+  'Nog prototype 2 construction.',
+  'Nog prototype 2 construction.',
+  'Nog prototype 2 testing.',
 ];
