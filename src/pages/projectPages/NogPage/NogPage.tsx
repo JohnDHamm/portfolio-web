@@ -33,18 +33,23 @@ export const NogPage: React.FC = () => {
       projectColor={colors.primary}
       logo={{ src: NogLogo, alt: 'Nog logo', width: 440 }}
       title={title}
-      mainText="Darth kamino r2-d2 wedge k-3po. Yavin ben grievous biggs. Darth leia gamorrean moff hutt ben fett chewbacca darth. Aayla lars moff gamorrean antilles tusken raider. Coruscant moff hutt mace coruscant tatooine moff. Fett ahsoka jinn qui-gon. Bespin alderaan mara hutt mandalore hutt skywalker skywalker jabba. Jade lando solo padmé kit moff. Organa yoda antilles fett padmé moff jinn vader alderaan. Luke darth c-3po luuke padmé. Hutt kessel secura vader jade antilles alderaan. Jinn kamino cade fisto kessel solo fett."
+      mainText="When you're a coding bootcamp student thinking of ideas for a final project, the stress can lead to some crazy ideas. And if the Christmas season is also approaching, things can really get fun!"
     >
-      <Divider />
+      <Divider style={{ marginTop: '1rem' }} />
       <PhaseText>phase I</PhaseText>
-      <TextBlock>
-        Bothan binks jade ackbar calamari zabrak dantooine skywalker obi-wan.
-        Moff solo calamari tatooine luuke vader solo ahsoka. Secura bespin leia
-        skywalker yavin kessel darth palpatine solo. Darth han kessel mandalore
-        windu. Fett c-3po moff utapau dantooine. Solo bothan mara luke. Anakin
-        binks kamino antilles. Luuke luke organa vader amidala ahsoka aayla
-        skywalker. Luuke hutt tatooine mon dagobah jinn skywalker.
-      </TextBlock>
+      <ContentWithMargins top="0" bottom="1rem">
+        <TextBlock>
+          Completed as a "proof of concept", the first prototype uses an Arduino
+          microprocessor, bluetooth module, RGB LEDs, and a whole lot of
+          conductive thread. Code was developed for the Arduino to handle
+          BluetoothLE signals from any Android device to trigger patterns of
+          colors. Using basic music knowledge, a sequence was also programmed to
+          synchronize with a popular holiday song. A prototype Android app was
+          created using MIT App Inventor and functions as the controller,
+          triggering the LED patterns, while also handling playback of audio
+          files.
+        </TextBlock>
+      </ContentWithMargins>
       <VideoPlayer
         url="https://player.vimeo.com/video/200288091?color=ffffff&title=0&byline=0&portrait=0"
         caption="Nog prototype 1."
@@ -68,13 +73,11 @@ export const NogPage: React.FC = () => {
       <Divider />
       <PhaseText>phase II</PhaseText>
       <TextBlock>
-        Darth lobot c-3po kessel thrawn windu sith sith. Hutt mon mandalore moff
-        obi-wan maul. Amidala greedo watto organa darth darth skywalker.
-        Mustafar skywalker maul tusken raider cade skywalker mace obi-wan darth.
-        Luke wookiee luuke windu kessel. Gonk darth skywalker jango. Organa
-        padmé alderaan ewok darth maul calrissian. Mandalorians fett antilles
-        wicket. Mon yoda grievous chewbacca anakin solo endor. Skywalker mothma
-        c-3po sith anakin moff. Maul darth binks maul.
+        The Nog ecosystem consists of a web app to create and edit your custom
+        patterns (demo link below), a mobile app to access and interact with
+        patterns (yours, the ones included with the app, and others shared from
+        the Nog community), and the Nog controller to play the patterns and
+        amaze your friends.
       </TextBlock>
       <ContentWithMargins top="2rem" bottom="4rem">
         <DesktopSlideshow
